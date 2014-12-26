@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="2764435203901062" title="On Start">
+            <sub-events>
+                <event-block sid="7643191262517792">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="6948443625719627" type="Sprite" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="9566650506023265" type="Sprite">
+                            <param id="0" name="X">mouse.X</param>
+                            <param id="1" name="Y">mouse.Y</param>
+                        </action>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Sprite">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7686995749969514">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2668846372132351" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Sprite2">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="6744609165390904" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6833175368175464" title="Controls">
+            <sub-events>
+                <event-block sid="7768796418962569">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="872827743451432" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="3119988942860254" type="Sprite">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3714721401556208">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1845790164958381" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="8349812204198077" type="Sprite">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1803394752716291">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="2142306136064428" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="2923490766622458" type="Sprite">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2660972137634471">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5111209977337526" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="6952614120358491" type="Sprite">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
