@@ -56,6 +56,9 @@
                 <behavior-type name="ScrollTo" sid="4204129495422519">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="5222446041547495">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2037560480447509" speed="5">
@@ -115,14 +118,17 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="5361604532315345">
+        <object-type name="Controller" sid="5361604532315345">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="3166672831237696">
-                    <behavior id="Pin" />
-                </behavior-type>
                 <behavior-type name="Solid" sid="5656133656389623">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="5232525996247393">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="5315616201129351">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -136,6 +142,120 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1318074247282899" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Maps\Images\Blank.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="142740579062874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9452392591677936" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\tree01.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.729167" y="0.270833" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.729167" y="0.729167" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="9149402161337281">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="8483380252607704">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="2353603111487897">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6312169782512731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Collision.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="8438417208214501">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="7762350289864567">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="4549113539072748">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5739639372429543" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\64playersmashed.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.28125" y="0.5" />
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.671875" y="0.671875" />
+                            <point x="0.5" y="0.71875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="1054855205557927">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="629667131711369">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="4746969264175078">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5639639731620876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Collision.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TreeHitBox" sid="1788883520620746">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7466841371059766">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7254989612323074" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Collision.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="9945039520699768">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6388485635812239">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6061966579683352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Collision01.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

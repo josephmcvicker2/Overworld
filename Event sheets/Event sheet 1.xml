@@ -14,7 +14,7 @@
                             <param id="0" name="X">mouse.X</param>
                             <param id="1" name="Y">mouse.Y</param>
                         </action>
-                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Sprite">
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Controller">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -25,12 +25,12 @@
                     </conditions>
                     <actions>
                         <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Sprite2">
-                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="0" name="Pin to">Controller</param>
                             <param id="1" name="Mode">1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="6744609165390904" type="Sprite5">
-                            <param id="0" name="Pin to">Sprite</param>
-                            <param id="1" name="Mode">1</param>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="5446216258124527" type="Sprite">
+                            <param id="0" name="Pin to">Controller</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -45,7 +45,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="3119988942860254" type="Sprite">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="3119988942860254" type="Controller">
                             <param id="0" name="Control">2</param>
                         </action>
                     </actions>
@@ -57,7 +57,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="8349812204198077" type="Sprite">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="8349812204198077" type="Controller">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
@@ -69,7 +69,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="2923490766622458" type="Sprite">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="2923490766622458" type="Controller">
                             <param id="0" name="Control">3</param>
                         </action>
                     </actions>
@@ -81,7 +81,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="6952614120358491" type="Sprite">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="6952614120358491" type="Controller">
                             <param id="0" name="Control">1</param>
                         </action>
                     </actions>
