@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>144.207</position-x>
-        <position-y>109.56</position-y>
-        <position-z>44.6083</position-z>
-        <lookat-x>144.207</lookat-x>
-        <lookat-y>109.56</lookat-y>
+        <position-x>194.156</position-x>
+        <position-y>103.157</position-y>
+        <position-z>11.7467</position-z>
+        <lookat-x>194.156</lookat-x>
+        <lookat-y>103.157</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,11 +23,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Funishings" />
+    <active-layer name="Hair" />
     <layers>
         <layer locked="0" name="Map" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Boarder" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Controler" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Hands" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Clothes" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Pack" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Armor" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Off Hand" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Main Hand" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Hair" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Funishings" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

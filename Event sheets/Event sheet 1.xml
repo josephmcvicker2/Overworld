@@ -7,15 +7,15 @@
             <sub-events>
                 <event-block sid="7643191262517792">
                     <conditions>
-                        <condition id="-9" name="Is visible" sid="6948443625719627" type="Character" />
+                        <condition id="-9" inverted="1" name="Is visible" sid="5046099625747819" type="Controller" />
                     </conditions>
                     <actions>
-                        <action id="-22" name="Set angle toward position" sid="9566650506023265" type="Character">
-                            <param id="0" name="X">mouse.X</param>
-                            <param id="1" name="Y">mouse.Y</param>
-                        </action>
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Controller">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="3327373620221545" type="PlayerLayers">
+                            <param id="0" name="X">mouse.X</param>
+                            <param id="1" name="Y">mouse.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -28,9 +28,13 @@
                             <param id="0" name="Pin to">Controller</param>
                             <param id="1" name="Mode">1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="5446216258124527" type="Character">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="7163466494447512" type="ActionBar">
                             <param id="0" name="Pin to">Controller</param>
-                            <param id="1" name="Mode">0</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin2" id="0" name="Pin to object" sid="6212005169274437" type="PlayerLayers">
+                            <param id="0" name="Pin to">Controller</param>
+                            <param id="1" name="Mode">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -98,6 +102,18 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="6901280210833751" type="Tree" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="3010929110071153" title="Animations">
+            <sub-events>
+                <event-block sid="1013127670780067">
+                    <conditions />
+                    <actions>
+                        <action id="3" name="Start" sid="4370546410026499" type="PlayerLayers">
+                            <param id="0" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
