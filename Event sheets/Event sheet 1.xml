@@ -7,10 +7,10 @@
             <sub-events>
                 <event-block sid="7643191262517792">
                     <conditions>
-                        <condition id="-9" name="Is visible" sid="6948443625719627" type="Sprite" />
+                        <condition id="-9" name="Is visible" sid="6948443625719627" type="Character" />
                     </conditions>
                     <actions>
-                        <action id="-22" name="Set angle toward position" sid="9566650506023265" type="Sprite">
+                        <action id="-22" name="Set angle toward position" sid="9566650506023265" type="Character">
                             <param id="0" name="X">mouse.X</param>
                             <param id="1" name="Y">mouse.Y</param>
                         </action>
@@ -24,11 +24,11 @@
                         <condition id="-2" name="On start of layout" sid="2668846372132351" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Sprite2">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Boarder">
                             <param id="0" name="Pin to">Controller</param>
                             <param id="1" name="Mode">1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="5446216258124527" type="Sprite">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="5446216258124527" type="Character">
                             <param id="0" name="Pin to">Controller</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -84,6 +84,20 @@
                         <action behavior="8Direction" id="7" name="Simulate control" sid="6952614120358491" type="Controller">
                             <param id="0" name="Control">1</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5532181191898178">
+                    <conditions>
+                        <condition id="0" name="On click" sid="2455226263882132" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="8947994221068017" type="Mouse">
+                            <param id="0" name="Object">Tree</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6901280210833751" type="Tree" />
                     </actions>
                 </event-block>
             </sub-events>
