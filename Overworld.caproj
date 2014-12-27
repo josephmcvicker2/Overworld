@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -91,6 +92,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="InGame" sid="6252270943025356" type="boolean" />
+                <instance-variable name="ItemUsing" sid="1343763201713417" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="5656133656389623">
@@ -131,6 +133,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="InstanceNumber" sid="41497075727605" type="number" />
+                <instance-variable name="DropRate" sid="1654893568259048" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9452392591677936" speed="5">
@@ -414,6 +417,7 @@
             <plugin id="Arr" />
             <instance-variables>
                 <instance-variable name="isFull" sid="5175126624296036" type="boolean" />
+                <instance-variable name="SelectedItem" sid="3573704406791925" type="number" />
             </instance-variables>
             <container>
                 <type>Player</type>
@@ -434,14 +438,23 @@
             <instance-variables>
                 <instance-variable name="ItemID" sid="1835336121627254" type="number" />
                 <instance-variable name="IsInInventory" sid="3571739766260048" type="boolean" />
+                <instance-variable name="InventorySlotNumber" sid="6098597690420355" type="number" />
+                <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
+                <instance-variable name="InventoryNotBar" sid="4263611157272996" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
                     <behavior id="Pin" />
                 </behavior-type>
+                <behavior-type name="Sine" sid="6354034471367551">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="7737303529944623">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
                         <collision-poly>
@@ -450,6 +463,17 @@
                             <point x="0.625" y="0.625" />
                             <point x="0.125" y="0.875" />
                             <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\OreIron.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.125" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

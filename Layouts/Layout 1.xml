@@ -104,6 +104,7 @@
                     </properties>
                     <instance-variables>
                         <InGame>true</InGame>
+                        <ItemUsing>0</ItemUsing>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -151,11 +152,33 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <ItemID>1</ItemID>
+                        <ItemID>2</ItemID>
                         <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <Moving>false</Moving>
+                        <InventoryNotBar>false</InventoryNotBar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -182,9 +205,31 @@
                     <instance-variables>
                         <ItemID>1</ItemID>
                         <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <Moving>false</Moving>
+                        <InventoryNotBar>false</InventoryNotBar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -209,11 +254,33 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <ItemID>1</ItemID>
+                        <ItemID>2</ItemID>
                         <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <Moving>false</Moving>
+                        <InventoryNotBar>false</InventoryNotBar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -240,9 +307,31 @@
                     <instance-variables>
                         <ItemID>1</ItemID>
                         <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <Moving>false</Moving>
+                        <InventoryNotBar>false</InventoryNotBar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -269,9 +358,31 @@
                     <instance-variables>
                         <ItemID>1</ItemID>
                         <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <Moving>false</Moving>
+                        <InventoryNotBar>false</InventoryNotBar>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DragDrop">
+                            <properties>
+                                <axes>Both</axes>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -614,6 +725,7 @@
                     </properties>
                     <instance-variables>
                         <InstanceNumber>0</InstanceNumber>
+                        <DropRate>0</DropRate>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -639,6 +751,7 @@
                     </properties>
                     <instance-variables>
                         <InstanceNumber>0</InstanceNumber>
+                        <DropRate>0</DropRate>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1130,6 +1243,7 @@
             </properties>
             <instance-variables>
                 <isFull>false</isFull>
+                <SelectedItem>0</SelectedItem>
             </instance-variables>
         </instance>
     </nonworld-instances>

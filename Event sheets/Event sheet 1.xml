@@ -5,13 +5,57 @@
     <events>
         <event-group description="" sid="2764435203901062" title="ON START / GENERAL">
             <sub-events>
-                <event-block sid="4837565247426363">
+                <event-block sid="8851858642503939">
                     <conditions>
-                        <condition id="-18" name="On created" sid="227223597617512" type="Item" />
+                        <condition id="7" name="Cursor is over object" sid="6761018535275155" type="Mouse">
+                            <param id="0" name="Object">Item</param>
+                        </condition>
+                        <condition id="-16" name="Is on layer" sid="5054746888664298" type="Item">
+                            <param id="0" name="Layer">10</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="7093438733402085" type="Item">
-                            <param id="0" name="Frame number">Item.ItemID</param>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="480503395147001" type="Item">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5133487683572612">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="8008313453835388" type="Mouse">
+                            <param id="0" name="Object">Item</param>
+                        </condition>
+                        <condition id="-16" name="Is on layer" sid="7562624042425215" type="Item">
+                            <param id="0" name="Layer">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="5190442750149664" type="Item">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6423367876140079">
+                    <conditions>
+                        <condition id="-16" name="Is on layer" sid="3316190918569989" type="Item">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="955170727677829" type="Item">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8613043174221301">
+                    <conditions>
+                        <condition id="-16" name="Is on layer" sid="681558816008143" type="Item">
+                            <param id="0" name="Layer">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="7350543856228594" type="Item">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -20,12 +64,12 @@
                         <condition id="-9" inverted="1" name="Is visible" sid="5046099625747819" type="Player" />
                     </conditions>
                     <actions>
-                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Player">
-                            <param id="0" name="State">1</param>
-                        </action>
                         <action id="-22" name="Set angle toward position" sid="3327373620221545" type="PlayerLayers">
                             <param id="0" name="X">mouse.X</param>
                             <param id="1" name="Y">mouse.Y</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2886453305631811" type="Item">
+                            <param id="0" name="Frame number">Item.ItemID</param>
                         </action>
                     </actions>
                 </event-block>
@@ -34,6 +78,9 @@
                         <condition id="-2" name="On start of layout" sid="2668846372132351" type="System" />
                     </conditions>
                     <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Boarder">
                             <param id="0" name="Pin to">Player</param>
                             <param id="1" name="Mode">1</param>
@@ -55,6 +102,10 @@
                         <action behavior="Pin" id="0" name="Pin to object" sid="8702397448496738" type="InventoryUI">
                             <param id="0" name="Pin to">Dragger</param>
                             <param id="1" name="Mode">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5950802951088255" type="Inventory">
+                            <param id="0" name="Instance variable">SelectedItem</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -127,20 +178,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5532181191898178">
-                    <conditions>
-                        <condition id="0" name="On click" sid="2455226263882132" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                        <condition id="7" name="Cursor is over object" sid="8947994221068017" type="Mouse">
-                            <param id="0" name="Object">Tree</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="6901280210833751" type="Tree" />
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="3010929110071153" title="ANIMATIONS">
@@ -192,10 +229,367 @@
         </event-group>
         <event-group description="" sid="8180018964244004" title="INVENTORY AND ITEMS">
             <sub-events>
+                <event-group description="" sid="5189622489285017" title="Using">
+                    <sub-events>
+                        <event-block sid="4415022420446815">
+                            <conditions>
+                                <condition id="0" name="On click" sid="4469908654605858" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="2606733556169787" type="Mouse">
+                                    <param id="0" name="Object">InventoryUI</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="8097331688297244" type="Function">
+                                    <param id="0" name="Name">&quot;Use&quot;</param>
+                                    <param id="1" name="Parameter {n}">Inventory.At(Inventory.SelectedItem,0,0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5645549480471145">
+                            <conditions>
+                                <condition id="0" name="On function" sid="3787871337483542" type="Function">
+                                    <param id="0" name="Name">&quot;Use&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="9494588048120225" type="Slot">
+                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Inventory.SelectedItem</param>
+                                </condition>
+                                <condition id="-34" name="Pick by evaluate" sid="7246264592820537" type="System">
+                                    <param id="0" name="Object">Item</param>
+                                    <param id="1" name="Expression">Inventory.SelectedItem = Item.InventorySlotNumber</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="7776079973376849" type="Player">
+                                    <param id="0" name="Instance variable">ItemUsing</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="5674767426795368" type="Inventory">
+                                    <param id="0" name="X">Inventory.SelectedItem</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="6172019267870871" type="Slot">
+                                    <param id="0" name="Instance variable">IsFull</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="8534647634107187" type="Item" />
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="8967716797278667" title="Item Use List">
+                            <sub-events>
+                                <event-block sid="5752676845659827">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="4697198957816041" type="Function">
+                                            <param id="0" name="Name">&quot;Use&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="7896065919573358">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="141280945404061" type="Player">
+                                                    <param id="0" name="Instance variable">ItemUsing</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="8549893978034223" type="System">
+                                                    <param id="0" name="Object to create">Item</param>
+                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="2" name="X">player.X</param>
+                                                    <param id="3" name="Y">player.Y + 16</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="4862181884750149" type="Item">
+                                                    <param id="0" name="Instance variable">ItemID</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="5388192331672696" type="System">
+                                                    <param id="0" name="Object to create">Item</param>
+                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="2" name="X">player.X</param>
+                                                    <param id="3" name="Y">player.Y + 20</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="2632000106972345" type="Item">
+                                                    <param id="0" name="Instance variable">ItemID</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="6856494574722041" type="System">
+                                                    <param id="0" name="Object to create">Item</param>
+                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="2" name="X">player.X</param>
+                                                    <param id="3" name="Y">player.Y + 14</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="8017976689048438" type="Item">
+                                                    <param id="0" name="Instance variable">ItemID</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="9468789442000563" type="System">
+                                                    <param id="0" name="Object to create">Item</param>
+                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="2" name="X">player.X</param>
+                                                    <param id="3" name="Y">player.Y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="2392721188991361" type="Item">
+                                                    <param id="0" name="Instance variable">ItemID</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="2797690275621487">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="5697748189978695" type="Player">
+                                                    <param id="0" name="Instance variable">ItemUsing</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="581800460464875" type="System">
+                                                    <param id="0" name="Object to create">Tree</param>
+                                                    <param id="1" name="Layer">9</param>
+                                                    <param id="2" name="X">player.X</param>
+                                                    <param id="3" name="Y">player.Y + 16</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="5177143061274165" type="System">
+                                                    <param id="0" name="Object to create">TreeTrunk</param>
+                                                    <param id="1" name="Layer">1</param>
+                                                    <param id="2" name="X">Tree.X</param>
+                                                    <param id="3" name="Y">Tree.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="8016278404871423">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="1729129653972302" type="Player">
+                                                    <param id="0" name="Instance variable">ItemUsing</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="1404610661023939" title="Picking Up Items / Adding Things To Inventory">
+                    <sub-events>
+                        <event-block sid="9190274493808706">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5836377511149189" type="System">
+                                    <param id="0" name="Object">Slot</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="994902679586174">
+                            <conditions>
+                                <condition id="0" name="On function" sid="7555482712369061" type="Function">
+                                    <param id="0" name="Name">&quot;nextSlot&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set return value" sid="40755389963887" type="Function">
+                                    <param id="0" name="Value">-1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="1199206091352167">
+                                    <conditions>
+                                        <condition id="-24" name="For Each (ordered)" sid="8450727248055016" type="System">
+                                            <param id="0" name="Object">Slot</param>
+                                            <param id="1" name="Expression">Slot.SlotNumber</param>
+                                            <param id="2" name="Order">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="3440952068576137">
+                                            <conditions>
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="215703105734595" type="Slot">
+                                                    <param id="0" name="Instance variable">IsFull</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="1" name="Set return value" sid="5370541826848653" type="Function">
+                                                    <param id="0" name="Value">Slot.SlotNumber</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="2411568490647959" type="Slot">
+                                                    <param id="0" name="Instance variable">IsFull</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-24" name="Stop loop" sid="9126955005579219" type="System" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="2256394264147163">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="5217182770176122" type="Keyboard">
+                                    <param id="0" name="Key">86 (V)</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="475779721546483" type="System">
+                                    <param id="0" name="Object">Item</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="3674568215924402" type="Player">
+                                    <param id="0" name="Object">Item</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="4760473937182539" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-16" name="Is on layer" sid="9212443335741382" type="Item">
+                                    <param id="0" name="Layer">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="8280153708348441" type="Function">
+                                    <param id="0" name="Name">&quot;PickUp&quot;</param>
+                                    <param id="1" name="Parameter {n}">Item.ItemID</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5877536897533503">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Compare two values" sid="8645544226551985" type="System">
+                                            <param id="0" name="First value">Function.ReturnValue</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">-1</param>
+                                        </condition>
+                                        <condition id="-34" name="Pick by evaluate" sid="7326350241253732" type="System">
+                                            <param id="0" name="Object">Slot</param>
+                                            <param id="1" name="Expression">Slot.SlotNumber=Function.ReturnValue</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-26" name="Move to layer" sid="1742962435016957" type="Item">
+                                            <param id="0" name="Layer">10</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="6042332077301274" type="Item" />
+                                        <action id="-4" name="Set position to another object" sid="2631519258981537" type="Item">
+                                            <param id="0" name="Object">Slot</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="9784468930977172" type="Slot" />
+                                        <action id="-8" name="Set angle" sid="9803566754550528" type="Item">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="4159123226415206" type="Item">
+                                            <param id="0" name="Instance variable">InventorySlotNumber</param>
+                                            <param id="1" name="Value">slot.SlotNumber</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="885451313002148">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="5644100226322326" type="Slot">
+                                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="2270752598874303" type="Item">
+                                                    <param id="0" name="Pin to">Slot</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="7505619149347883" type="Item">
+                                                    <param id="0" name="Instance variable">IsInInventory</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="1073951676722421" type="Item">
+                                                    <param id="0" name="Instance variable">InventorySlotNumber</param>
+                                                    <param id="1" name="Value">slot.SlotNumber</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="1576801567863146" type="Item">
+                                                    <param id="0" name="Instance variable">IsInInventory</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="2209511613755087">
+                            <conditions>
+                                <condition id="0" name="On function" sid="8108338591063067" type="Function">
+                                    <param id="0" name="Name">&quot;PickUp&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set return value" sid="4157343128978457" type="Function">
+                                    <param id="0" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="5601969692133364" type="Function">
+                                    <param id="0" name="Name">&quot;nextSlot&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2268231266435533">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Compare two values" sid="571197792855267" type="System">
+                                            <param id="0" name="First value">Function.ReturnValue</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="1049114015262453" type="Inventory">
+                                            <param id="0" name="X">Function.ReturnValue</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </action>
+                                        <action id="1" name="Set return value" sid="1316255212764161" type="Function">
+                                            <param id="0" name="Value">Function.ReturnValue</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="262406920649548" title="Inverntory">
                     <sub-events>
                         <event-group description="" sid="5329763781104995" title="Mouse Over">
                             <sub-events>
+                                <event-block sid="110001962182188">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="37848383767734" type="Item">
+                                            <param id="0" name="Instance variable">IsInInventory</param>
+                                        </condition>
+                                        <condition id="-9" inverted="1" name="Is visible" sid="8598227370071752" type="InventoryUI" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="1910729589888271" type="Item">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2782963758011809">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="3881697228367989" type="Item">
+                                            <param id="0" name="Instance variable">IsInInventory</param>
+                                        </condition>
+                                        <condition id="-9" name="Is visible" sid="9688477739990264" type="InventoryUI" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="3174028954567008" type="Item">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="188942563514143">
                                     <conditions>
                                         <condition id="7" name="Cursor is over object" sid="1380016275540613" type="Mouse">
@@ -310,169 +704,6 @@
                 </event-group>
                 <event-group description="" sid="8022642244846887" title="ActionBar">
                     <sub-events>
-                        <event-group description="" sid="1404610661023939" title="Picking Up Items / Adding Things To Inventory">
-                            <sub-events>
-                                <event-block sid="9190274493808706">
-                                    <conditions>
-                                        <condition id="-11" name="For Each" sid="5836377511149189" type="System">
-                                            <param id="0" name="Object">Slot</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                </event-block>
-                                <event-block sid="994902679586174">
-                                    <conditions>
-                                        <condition id="0" name="On function" sid="7555482712369061" type="Function">
-                                            <param id="0" name="Name">&quot;nextSlot&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Set return value" sid="40755389963887" type="Function">
-                                            <param id="0" name="Value">-1</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="1199206091352167">
-                                            <conditions>
-                                                <condition id="-24" name="For Each (ordered)" sid="8450727248055016" type="System">
-                                                    <param id="0" name="Object">Slot</param>
-                                                    <param id="1" name="Expression">Slot.SlotNumber</param>
-                                                    <param id="2" name="Order">0</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions />
-                                            <sub-events>
-                                                <event-block sid="3440952068576137">
-                                                    <conditions>
-                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="215703105734595" type="Slot">
-                                                            <param id="0" name="Instance variable">IsFull</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="1" name="Set return value" sid="5370541826848653" type="Function">
-                                                            <param id="0" name="Value">Slot.SlotNumber</param>
-                                                        </action>
-                                                        <action id="-13" name="Set boolean" sid="2411568490647959" type="Slot">
-                                                            <param id="0" name="Instance variable">IsFull</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="-24" name="Stop loop" sid="9126955005579219" type="System" />
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="2256394264147163">
-                                    <conditions>
-                                        <condition id="0" name="On key pressed" sid="5217182770176122" type="Keyboard">
-                                            <param id="0" name="Key">86 (V)</param>
-                                        </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="3674568215924402" type="Player">
-                                            <param id="0" name="Object">Item</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="4760473937182539" type="Item">
-                                            <param id="0" name="Instance variable">ItemID</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                        <condition id="-16" name="Is on layer" sid="9212443335741382" type="Item">
-                                            <param id="0" name="Layer">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="8280153708348441" type="Function">
-                                            <param id="0" name="Name">&quot;PickUp&quot;</param>
-                                            <param id="1" name="Parameter {n}">Item.ItemID</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="5877536897533503">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="8645544226551985" type="System">
-                                                    <param id="0" name="First value">Function.ReturnValue</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">-1</param>
-                                                </condition>
-                                                <condition id="-34" name="Pick by evaluate" sid="7326350241253732" type="System">
-                                                    <param id="0" name="Object">Slot</param>
-                                                    <param id="1" name="Expression">Slot.SlotNumber=Function.ReturnValue</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-26" name="Move to layer" sid="1742962435016957" type="Item">
-                                                    <param id="0" name="Layer">10</param>
-                                                </action>
-                                                <action id="-24" name="Move to top" sid="6042332077301274" type="Item" />
-                                                <action id="-4" name="Set position to another object" sid="2631519258981537" type="Item">
-                                                    <param id="0" name="Object">Slot</param>
-                                                    <param id="1" name="Image point (optional)">0</param>
-                                                </action>
-                                                <action id="-24" name="Move to top" sid="9784468930977172" type="Slot" />
-                                            </actions>
-                                            <sub-events>
-                                                <event-block sid="885451313002148">
-                                                    <conditions>
-                                                        <condition id="-7" name="Compare instance variable" sid="5644100226322326" type="Slot">
-                                                            <param id="0" name="Instance variable">SlotNumber</param>
-                                                            <param id="1" name="Comparison">4</param>
-                                                            <param id="2" name="Value">4</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="Pin" id="0" name="Pin to object" sid="2270752598874303" type="Item">
-                                                            <param id="0" name="Pin to">Slot</param>
-                                                            <param id="1" name="Mode">0</param>
-                                                        </action>
-                                                        <action id="-13" name="Set boolean" sid="7505619149347883" type="Item">
-                                                            <param id="0" name="Instance variable">IsInInventory</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="2209511613755087">
-                                    <conditions>
-                                        <condition id="0" name="On function" sid="8108338591063067" type="Function">
-                                            <param id="0" name="Name">&quot;PickUp&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Set return value" sid="4157343128978457" type="Function">
-                                            <param id="0" name="Value">-1</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="5601969692133364" type="Function">
-                                            <param id="0" name="Name">&quot;nextSlot&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="2268231266435533">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="571197792855267" type="System">
-                                                    <param id="0" name="First value">Function.ReturnValue</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">-1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="3" name="Set at XY" sid="1049114015262453" type="Inventory">
-                                                    <param id="0" name="X">Function.ReturnValue</param>
-                                                    <param id="1" name="Y">0</param>
-                                                    <param id="2" name="Value">Function.Param(0)</param>
-                                                </action>
-                                                <action id="1" name="Set return value" sid="1316255212764161" type="Function">
-                                                    <param id="0" name="Value">Function.ReturnValue</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                            </sub-events>
-                        </event-group>
                         <event-group description="" sid="8089405021049706" title="Selecting Items">
                             <sub-events>
                                 <event-block sid="9055391717791311">
@@ -518,6 +749,10 @@
                                             <actions>
                                                 <action id="-13" name="Set boolean" sid="1328072172481393" type="Slot">
                                                     <param id="0" name="Instance variable">IsSelected</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="8952324677445734" type="Inventory">
+                                                    <param id="0" name="Instance variable">SelectedItem</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
@@ -590,6 +825,10 @@
                                                     <param id="0" name="Instance variable">IsSelected</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="-10" name="Set value" sid="5737889447297167" type="Inventory">
+                                                    <param id="0" name="Instance variable">SelectedItem</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="8216714528704186">
@@ -659,6 +898,10 @@
                                                 <action id="-13" name="Set boolean" sid="2574678412045475" type="Slot">
                                                     <param id="0" name="Instance variable">IsSelected</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="8264453423407112" type="Inventory">
+                                                    <param id="0" name="Instance variable">SelectedItem</param>
+                                                    <param id="1" name="Value">3</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -730,6 +973,10 @@
                                                     <param id="0" name="Instance variable">IsSelected</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="-10" name="Set value" sid="4377383398303481" type="Inventory">
+                                                    <param id="0" name="Instance variable">SelectedItem</param>
+                                                    <param id="1" name="Value">4</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="5547290181678828">
@@ -785,31 +1032,340 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="110001962182188">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="37848383767734" type="Item">
-                    <param id="0" name="Instance variable">IsInInventory</param>
-                </condition>
-                <condition id="-9" inverted="1" name="Is visible" sid="8598227370071752" type="InventoryUI" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="1910729589888271" type="Item">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2782963758011809">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="3881697228367989" type="Item">
-                    <param id="0" name="Instance variable">IsInInventory</param>
-                </condition>
-                <condition id="-9" name="Is visible" sid="9688477739990264" type="InventoryUI" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="3174028954567008" type="Item">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="4438393603158285" title="Rescources">
+            <sub-events>
+                <event-block sid="5532181191898178">
+                    <conditions>
+                        <condition id="0" name="On click" sid="2455226263882132" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="8947994221068017" type="Mouse">
+                            <param id="0" name="Object">Tree</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6901280210833751" type="Tree">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1410682628405271" type="Tree">
+                            <param id="0" name="Instance variable">DropRate</param>
+                            <param id="1" name="Value">floor(random(4)+1)</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3270174543745327" type="Tree" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6081792586076646">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1281384037223353" type="Tree">
+                                    <param id="0" name="Instance variable">DropRate</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="7705705036945222" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X +9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="254746518751009" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4611239546943433">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="4442488816149607" type="Tree">
+                                    <param id="0" name="Instance variable">DropRate</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="5757542154648803" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X +9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7171476197937672" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5189544564852205" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X -9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4168740243664093" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9262377011955913">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7961833630109826" type="Tree">
+                                    <param id="0" name="Instance variable">DropRate</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="7456990763918014" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X +9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5901288757500772" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="2423612689819753" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X -9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="279428690941093" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="233088448926444" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X </param>
+                                    <param id="3" name="Y">Tree.Y-9</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5307698116574488" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5358098030007751">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="8549388595776155" type="Tree">
+                                    <param id="0" name="Instance variable">DropRate</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="5020560615837949" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X +9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2245063719762181" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4642559903927434" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X -9</param>
+                                    <param id="3" name="Y">Tree.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2666793175443762" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5743465155516372" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X </param>
+                                    <param id="3" name="Y">Tree.Y-9</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2694245754898763" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="7449642434403744" type="System">
+                                    <param id="0" name="Object to create">Item</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">Tree.X </param>
+                                    <param id="3" name="Y">Tree.Y+9</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8136084517357033" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" disabled="1" sid="4787390188015773" title="Trash">
+            <sub-events>
+                <event-block disabled="1" sid="3263693389178096">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="8096799405624415" type="Item">
+                            <param id="0" name="Instance variable">IsInInventory</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="7284947666784796" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="556504166946009" type="Mouse">
+                            <param id="0" name="Object">Item</param>
+                        </condition>
+                        <condition id="-34" name="Pick by evaluate" sid="2378215759913984" type="System">
+                            <param id="0" name="Object">Slot</param>
+                            <param id="1" name="Expression">Item.InventorySlotNumber = Slot.SlotNumber</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="1" name="Unpin" sid="3813227989063332" type="Item" />
+                        <action id="-13" name="Set boolean" sid="912379200746737" type="Item">
+                            <param id="0" name="Instance variable">Moving</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="156387250264138" type="Slot">
+                            <param id="0" name="Instance variable">IsFull</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="395656452105215">
+                    <conditions>
+                        <condition id="3" name="On button released" sid="7812822025968431" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="1918828062845334" type="Item">
+                            <param id="0" name="Instance variable">Moving</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3601806161617266" type="Function">
+                            <param id="0" name="Name">&quot;ItemStopMoving&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="1507908127053735">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block disabled="1" sid="5778339134686813">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8305005979106926" type="Function">
+                            <param id="0" name="Name">&quot;ItemStopMoving&quot;</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="3186934997927357" type="Item">
+                            <param id="0" name="Object">Slot</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="2302161211722429" type="Function">
+                            <param id="0" name="Name">&quot;ItemMoveBack&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="9686865022880922">
+                    <conditions>
+                        <condition id="0" name="On function" sid="9733014041826585" type="Function">
+                            <param id="0" name="Name">&quot;ItemStopMoving&quot;</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="5111541814736147" type="Mouse">
+                            <param id="0" name="Object">Item</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="562887488692522" type="Item">
+                            <param id="0" name="Object">Slot</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" disabled="1" sid="6892641372472562">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2181402587711111" type="Slot">
+                                    <param id="0" name="Instance variable">IsFull</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="744643858283343" type="Item">
+                                    <param id="0" name="Object">Slot</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="1137282136788968" type="Item">
+                                    <param id="0" name="Pin to">Slot</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="2678854516811023" type="Item">
+                                    <param id="0" name="Instance variable">Moving</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" disabled="1" sid="2004434315289761">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1563005179284612" type="Slot">
+                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Item.InventorySlotNumber</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="3750684574280328" type="Item">
+                                    <param id="0" name="Object">Slot</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="5042844233873895" type="Item">
+                                    <param id="0" name="Pin to">Slot</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="7301092893329959" type="Item">
+                                    <param id="0" name="Instance variable">Moving</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="9904112084982273">
+                    <conditions>
+                        <condition id="0" name="On function" sid="738183106671408" type="Function">
+                            <param id="0" name="Name">&quot;ItemMoveBack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="8556941926842655">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="139921338282678" type="Slot">
+                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Item.InventorySlotNumber</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6274871512316842" type="Item">
+                                    <param id="0" name="Instance variable">Moving</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="8082276562318851" type="Item">
+                                    <param id="0" name="Object">Slot</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="7157030750055223" type="Item">
+                                    <param id="0" name="Pin to">Slot</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="4185861956341672" type="Item">
+                                    <param id="0" name="Instance variable">Moving</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
