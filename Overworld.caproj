@@ -8,13 +8,17 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3f9q3sgla1rqz</unique-id>
-    <saved-with-version>19000</saved-with-version>
+    <saved-with-version>19200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -57,6 +61,16 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1237773606686911" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Boarder\Freindly.png">
@@ -73,8 +87,11 @@
         <object-type name="Keyboard" sid="8591742467781526">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Controller" sid="5361604532315345">
+        <object-type name="Player" sid="5361604532315345">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="InGame" sid="6252270943025356" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="5656133656389623">
                     <behavior id="solid" />
@@ -86,6 +103,16 @@
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5607002000840864" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Collision.png" />
@@ -134,7 +161,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7254989612323074" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Map\Tiles\Indeviduals\Tree Trunk.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Map\Tiles\Indeviduals\Tree Trunk.png">
                         <collision-poly>
                             <point x="0.1875" y="0.1875" />
                             <point x="0.8125" y="0.1875" />
@@ -152,6 +179,16 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4597027840813541" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\actionbar4.png">
@@ -174,8 +211,18 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="5">
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="6">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands00.png">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -218,6 +265,16 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Clothes\clothes02.png">
@@ -238,8 +295,18 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="5">
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="6">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack000.png">
                         <collision-poly>
                             <point x="0.390625" y="0.609375" />
@@ -290,6 +357,16 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153385415935086" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hair\hair11.png">
@@ -301,6 +378,117 @@
                             <point x="0.34375" y="0.34375" />
                             <point x="0.5" y="0.359375" />
                             <point x="0.65625" y="0.34375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot" sid="9693206256613041">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="SlotNumber" sid="3619464295763796" type="number" />
+                <instance-variable name="IsFull" sid="8563003826801384" type="boolean" />
+                <instance-variable name="IsSelected" sid="1362142720948519" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7203356879798163" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.25" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Selected.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Inventory" sid="7591099813780453">
+            <plugin id="Arr" />
+            <instance-variables>
+                <instance-variable name="isFull" sid="5175126624296036" type="boolean" />
+            </instance-variables>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Boarder</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+            </container>
+        </object-type>
+        <object-type name="Function" sid="2491592186687046">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Item" sid="5185290282799843">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ItemID" sid="1835336121627254" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.25" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InventoryUI" sid="3283858496582166">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HasBbeenPressed" sid="8632244439020855" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="413356388020432">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3619475826942988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Inventory8.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.953125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.953125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="3240858253211652">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Dragger" sid="716998526304776">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="9442604638230136">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3310983221660869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Inventory Dragger.png">
+                        <collision-poly>
+                            <point x="0.0104167" y="0.166667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.989583" y="0.166667" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -331,6 +519,7 @@
     <global-instances>
         <global-instance type="Mouse" uid="1" />
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Function" uid="19" />
     </global-instances>
     <sounds-folder />
     <music-folder />
