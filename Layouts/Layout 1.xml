@@ -152,7 +152,11 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <IsInInventory>false</IsInInventory>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -177,7 +181,11 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <IsInInventory>false</IsInInventory>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -202,7 +210,11 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <IsInInventory>false</IsInInventory>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -227,7 +239,11 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <IsInInventory>false</IsInInventory>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -252,7 +268,11 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <IsInInventory>false</IsInInventory>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -691,6 +711,9 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -718,6 +741,9 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -745,6 +771,9 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -772,6 +801,9 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -857,6 +889,9 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -880,14 +915,17 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>6</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>371</x>
                         <y>98.5</y>
                         <z>0</z>
                         <width>8</width>
@@ -907,10 +945,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>7</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -934,10 +975,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>9</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -961,10 +1005,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>10</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -988,10 +1035,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>11</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1015,10 +1065,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>12</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1042,10 +1095,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>1</SlotNumber>
+                        <SlotNumber>13</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

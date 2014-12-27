@@ -57,6 +57,23 @@
                             <param id="1" name="Mode">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="8709577123021977">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="235898805247827" type="Slot">
+                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="8734219503992564" type="Slot">
+                                    <param id="0" name="Pin to">InventoryUI</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -177,7 +194,46 @@
             <sub-events>
                 <event-group description="" sid="262406920649548" title="Inverntory">
                     <sub-events>
-                        <event-group description="" sid="5329763781104995" title="Mouse Over" />
+                        <event-group description="" sid="5329763781104995" title="Mouse Over">
+                            <sub-events>
+                                <event-block sid="188942563514143">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="1380016275540613" type="Mouse">
+                                            <param id="0" name="Object">Slot</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="2410387029091191" type="Slot">
+                                            <param id="0" name="Instance variable">SlotNumber</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="5304232137646283" type="Slot">
+                                            <param id="0" name="Instance variable">IsSelected</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3270005937611662">
+                                    <conditions>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="5714640571374651" type="Mouse">
+                                            <param id="0" name="Object">Slot</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="6619547275491592" type="Slot">
+                                            <param id="0" name="Instance variable">SlotNumber</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="2083231993221004" type="Slot">
+                                            <param id="0" name="Instance variable">IsSelected</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                         <event-group description="" sid="9672484355492363" title="Drag And Visible">
                             <sub-events>
                                 <event-block sid="7146290327350124">
@@ -354,6 +410,27 @@
                                                 </action>
                                                 <action id="-24" name="Move to top" sid="9784468930977172" type="Slot" />
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="885451313002148">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="5644100226322326" type="Slot">
+                                                            <param id="0" name="Instance variable">SlotNumber</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action behavior="Pin" id="0" name="Pin to object" sid="2270752598874303" type="Item">
+                                                            <param id="0" name="Pin to">Slot</param>
+                                                            <param id="1" name="Mode">0</param>
+                                                        </action>
+                                                        <action id="-13" name="Set boolean" sid="7505619149347883" type="Item">
+                                                            <param id="0" name="Instance variable">IsInInventory</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -708,5 +785,31 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="110001962182188">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="37848383767734" type="Item">
+                    <param id="0" name="Instance variable">IsInInventory</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="8598227370071752" type="InventoryUI" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1910729589888271" type="Item">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2782963758011809">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="3881697228367989" type="Item">
+                    <param id="0" name="Instance variable">IsInInventory</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="9688477739990264" type="InventoryUI" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3174028954567008" type="Item">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
