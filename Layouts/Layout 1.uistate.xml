@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>266.706</position-x>
-        <position-y>125.523</position-y>
-        <position-z>28.1024</position-z>
-        <lookat-x>266.706</lookat-x>
-        <lookat-y>125.523</lookat-y>
+        <position-x>181.656</position-x>
+        <position-y>96.9171</position-y>
+        <position-z>37.4043</position-z>
+        <lookat-x>181.656</lookat-x>
+        <lookat-y>96.9171</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="UI" />
+    <active-layer name="Text" />
     <layers>
         <layer locked="0" name="Map" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Game" parallax-in-editor="0" visible="1" />
@@ -36,5 +36,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="Hair" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Funishings" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Text" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
