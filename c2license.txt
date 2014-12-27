@@ -1,0 +1,9 @@
+﻿License type: PERSONAL
+Product: Construct 2
+Licensed to: Sam McVicker
+Email: jsmthethird@gmail.com
+Comment: 
+Timestamp: 1419608472
+Hash: F5306D360C22ABC35D710FE8E58B9B7F3D9EA8B055C219744
+
+This is a standard license, for independent use by the above named individual up to an associated use revenue of 5000 USD, or educational, charity or otherwise non-commercial use.  Use outside of these bounds is prohibited.
