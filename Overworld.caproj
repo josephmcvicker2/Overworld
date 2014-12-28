@@ -232,7 +232,7 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="6">
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands00.png">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -286,7 +286,7 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Clothes\clothes02.png">
                         <collision-poly>
                             <point x="1" y="0" />
@@ -316,7 +316,7 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="6">
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack000.png">
                         <collision-poly>
                             <point x="0.390625" y="0.609375" />
@@ -378,7 +378,7 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153385415935086" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153385415935086" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hair\hair11.png">
                         <collision-poly>
                             <point x="0.6875" y="0.6875" />
@@ -425,7 +425,8 @@
             <plugin id="Arr" />
             <instance-variables>
                 <instance-variable name="isFull" sid="5175126624296036" type="boolean" />
-                <instance-variable name="SelectedItem" sid="3573704406791925" type="number" />
+                <instance-variable name="SelectedSlot" sid="3573704406791925" type="number" />
+                <instance-variable name="SelectedItemType" sid="7553273661696064" type="number" />
             </instance-variables>
             <container>
                 <type>Player</type>
@@ -449,10 +450,11 @@
                 <instance-variable name="IsInInventory" sid="3571739766260048" type="boolean" />
                 <instance-variable name="InventorySlotNumber" sid="6098597690420355" type="number" />
                 <instance-variable name="PointsAnvil" sid="3872234801366928" type="number" />
-                <instance-variable name="pointsForge" sid="35078250406227" type="number" />
+                <instance-variable name="PointsForge" sid="35078250406227" type="number" />
                 <instance-variable name="IsCrafting" sid="843292748331894" type="boolean" />
                 <instance-variable name="cStopped" sid="5592059976212863" type="boolean" />
                 <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
+                <instance-variable name="PointsGrind" sid="2734224885636874" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -729,6 +731,7 @@
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="OverlapShow" sid="8592587365236677" type="boolean" />
+                <instance-variable name="Mode" sid="8169929783229441" type="number" />
             </instance-variables>
         </object-type>
         <object-type name="CrafterOil" sid="3043605257353807">
@@ -783,6 +786,30 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="CrafterGrind" sid="8411475862665926">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3202363565837731">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586378470938432" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Map\Tiles\Indeviduals\Grindstone.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.0625" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.90625" y="0.1875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.90625" y="0.8125" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.03125" y="0.9375" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="PlayerLayers" plugin-id="Sprite" sid="6391179049397182">
@@ -802,6 +829,7 @@
             <members>
                 <member>CrafterAnvil</member>
                 <member>CrafterForge</member>
+                <member>CrafterGrind</member>
                 <member>CrafterOil</member>
             </members>
         </family>
@@ -809,10 +837,13 @@
             <members>
                 <member>CrafterAnvil</member>
                 <member>CrafterForge</member>
+                <member>CrafterGrind</member>
                 <member>CrafterOil</member>
+                <member>Dragger</member>
                 <member>Item</member>
                 <member>Player</member>
                 <member>Slot</member>
+                <member>Tree</member>
             </members>
         </family>
     </families>
