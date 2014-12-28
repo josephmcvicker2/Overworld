@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Boarder" uid="2">
+                <instance type="Border" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -115,7 +115,7 @@
                         <behavior-instance type="8Direction">
                             <properties>
                                 <max-speed>40</max-speed>
-                                <acceleration>200</acceleration>
+                                <acceleration>800</acceleration>
                                 <deceleration>200</deceleration>
                                 <directions>8 directions</directions>
                                 <set-angle>No</set-angle>
@@ -153,13 +153,14 @@
                     </properties>
                     <instance-variables>
                         <ItemID>2</ItemID>
+                        <Type>0</Type>
                         <IsInInventory>false</IsInInventory>
                         <InventorySlotNumber>0</InventorySlotNumber>
-                        <Moving>false</Moving>
-                        <csForge>0</csForge>
-                        <cStopped>false</cStopped>
+                        <PointsAnvil>0</PointsAnvil>
+                        <pointsForge>0</pointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <Type>0</Type>
+                        <cStopped>false</cStopped>
+                        <Moving>false</Moving>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -174,12 +175,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -207,13 +202,14 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <Type>0</Type>
                         <IsInInventory>false</IsInInventory>
                         <InventorySlotNumber>0</InventorySlotNumber>
-                        <Moving>false</Moving>
-                        <csForge>0</csForge>
-                        <cStopped>false</cStopped>
+                        <PointsAnvil>0</PointsAnvil>
+                        <pointsForge>0</pointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <Type>0</Type>
+                        <cStopped>false</cStopped>
+                        <Moving>false</Moving>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -228,12 +224,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -261,13 +251,14 @@
                     </properties>
                     <instance-variables>
                         <ItemID>2</ItemID>
+                        <Type>0</Type>
                         <IsInInventory>false</IsInInventory>
                         <InventorySlotNumber>0</InventorySlotNumber>
-                        <Moving>false</Moving>
-                        <csForge>0</csForge>
-                        <cStopped>false</cStopped>
+                        <PointsAnvil>0</PointsAnvil>
+                        <pointsForge>0</pointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <Type>0</Type>
+                        <cStopped>false</cStopped>
+                        <Moving>false</Moving>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -282,12 +273,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -315,13 +300,14 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <Type>0</Type>
                         <IsInInventory>false</IsInInventory>
                         <InventorySlotNumber>0</InventorySlotNumber>
-                        <Moving>false</Moving>
-                        <csForge>0</csForge>
-                        <cStopped>false</cStopped>
+                        <PointsAnvil>0</PointsAnvil>
+                        <pointsForge>0</pointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <Type>0</Type>
+                        <cStopped>false</cStopped>
+                        <Moving>false</Moving>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -336,12 +322,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -369,13 +349,14 @@
                     </properties>
                     <instance-variables>
                         <ItemID>1</ItemID>
+                        <Type>0</Type>
                         <IsInInventory>false</IsInInventory>
                         <InventorySlotNumber>0</InventorySlotNumber>
-                        <Moving>false</Moving>
-                        <csForge>0</csForge>
-                        <cStopped>false</cStopped>
+                        <PointsAnvil>0</PointsAnvil>
+                        <pointsForge>0</pointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <Type>0</Type>
+                        <cStopped>false</cStopped>
+                        <Moving>false</Moving>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -390,12 +371,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -414,7 +389,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Forge" uid="37">
+                <instance type="CrafterForge" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -422,7 +397,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Active>false</Active>
                         <FuelAmount>0</FuelAmount>
                         <Lit>false</Lit>
                         <IsCrafting>false</IsCrafting>
@@ -443,6 +417,103 @@
                         <z>0</z>
                         <width>48</width>
                         <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CrafterForge" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <FuelAmount>0</FuelAmount>
+                        <Lit>false</Lit>
+                        <IsCrafting>false</IsCrafting>
+                        <itemUID>0</itemUID>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64.393470764</x>
+                        <y>108.325286865</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CrafterOil" uid="42">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>262.360107422</x>
+                        <y>70.581642151</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CrafterAnvil" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <IsCrafting>false</IsCrafting>
+                        <ItemUID>0</ItemUID>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>332.865020752</x>
+                        <y>73.409164429</y>
+                        <z>0</z>
+                        <width>20</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1358,7 +1429,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Text" sid="4661479335645057">
+        <layer name="UI Text" sid="4661479335645057">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -1374,29 +1445,81 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text3" uid="38">
+                <instance type="Details" uid="40">
                     <properties>
-                        <text>Inventory</text>
+                        <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tahoma,-11,400,0</font>
+                        <font>Arial,-7,400,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Bottom</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <OverlapShow>false</OverlapShow>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>200.171356201</x>
-                        <y>13.692642212</y>
+                        <x>-65.025390625</x>
+                        <y>107.577430725</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Game Text" sid="2412099938943542">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="CraftDetails" uid="41">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-7,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Bottom</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <OverlapShow>false</OverlapShow>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-56.422241211</x>
+                        <y>46.982254028</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

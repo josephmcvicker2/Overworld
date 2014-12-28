@@ -57,7 +57,7 @@
         <object-type name="Mouse" sid="4710119097256556">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="Boarder" sid="7538660264277698">
+        <object-type name="Border" sid="7538660264277698">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="8172598503327053">
@@ -68,7 +68,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -111,7 +111,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -193,7 +193,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -225,7 +225,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -279,7 +279,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -309,7 +309,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -371,7 +371,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -431,7 +431,7 @@
                 <type>Player</type>
                 <type>Inventory</type>
                 <type>Hair</type>
-                <type>Boarder</type>
+                <type>Border</type>
                 <type>Clothes</type>
                 <type>Hands</type>
                 <type>Pack</type>
@@ -445,13 +445,14 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="ItemID" sid="1835336121627254" type="number" />
+                <instance-variable name="Type" sid="3659134286497507" type="number" />
                 <instance-variable name="IsInInventory" sid="3571739766260048" type="boolean" />
                 <instance-variable name="InventorySlotNumber" sid="6098597690420355" type="number" />
-                <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
-                <instance-variable name="csForge" sid="35078250406227" type="number" />
-                <instance-variable name="cStopped" sid="5592059976212863" type="boolean" />
+                <instance-variable name="PointsAnvil" sid="3872234801366928" type="number" />
+                <instance-variable name="pointsForge" sid="35078250406227" type="number" />
                 <instance-variable name="IsCrafting" sid="843292748331894" type="boolean" />
-                <instance-variable name="Type" sid="3659134286497507" type="number" />
+                <instance-variable name="cStopped" sid="5592059976212863" type="boolean" />
+                <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -460,12 +461,9 @@
                 <behavior-type name="Sine" sid="6354034471367551">
                     <behavior id="Sin" />
                 </behavior-type>
-                <behavior-type name="DragDrop" sid="7737303529944623">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
                         <collision-poly>
@@ -485,6 +483,18 @@
                             <point x="0.5" y="0.875" />
                             <point x="0.25" y="0.75" />
                             <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\IngotIron.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.1875" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -516,8 +526,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="3240858253211652">
+        <object-type name="Details" sid="3240858253211652">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="OverlapShow" sid="4805572380090186" type="boolean" />
+            </instance-variables>
         </object-type>
         <object-type name="Dragger" sid="716998526304776">
             <plugin id="Sprite" />
@@ -578,7 +591,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Forge" sid="2086506570222565">
+        <object-type name="CrafterForge" sid="2086506570222565">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="FuelAmount" sid="7948125066223529" type="number" />
@@ -712,11 +725,63 @@
         <object-type name="ShadowLight2" sid="280147658960121">
             <plugin id="shadowlight" />
         </object-type>
-        <object-type name="Text2" sid="2645985608443987">
+        <object-type name="CraftDetails" sid="8709585918633687">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="OverlapShow" sid="8592587365236677" type="boolean" />
+            </instance-variables>
         </object-type>
-        <object-type name="Text3" sid="6495901578315704">
-            <plugin id="Text" />
+        <object-type name="CrafterOil" sid="3043605257353807">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9446450722800066">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7251232868366478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Map\Tiles\Indeviduals\Oil.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CrafterAnvil" sid="2367271102199907">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsCrafting" sid="9506095387834408" type="boolean" />
+                <instance-variable name="ItemUID" sid="5413141101990037" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="2567404949226481">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2501001075489738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Map\Tiles\Indeviduals\Anvil.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.3125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.9" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.25" y="0.6875" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
@@ -735,11 +800,20 @@
         </family>
         <family name="Crafters" plugin-id="Sprite" sid="1156565717839659">
             <members>
-                <member>Forge</member>
+                <member>CrafterAnvil</member>
+                <member>CrafterForge</member>
+                <member>CrafterOil</member>
             </members>
-            <instance-variables>
-                <instance-variable name="Active" sid="5724871212182767" type="boolean" />
-            </instance-variables>
+        </family>
+        <family name="Selectable" plugin-id="Sprite" sid="404002131094751">
+            <members>
+                <member>CrafterAnvil</member>
+                <member>CrafterForge</member>
+                <member>CrafterOil</member>
+                <member>Item</member>
+                <member>Player</member>
+                <member>Slot</member>
+            </members>
         </family>
     </families>
     <layout-folder>

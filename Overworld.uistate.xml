@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout order="0">Layout 1</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -20,8 +20,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="PlayerLayers" />
+        <family expanded="0" name="PlayerLayers" />
         <family expanded="0" name="Crafters" />
+        <family expanded="0" name="Selectable" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -31,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Boarder/" />
+        <folder expanded="1" path="animation-folder/Border/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Map/" />
         <folder expanded="1" path="animation-folder/Tree/" />
@@ -47,6 +48,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Dragger/" />
         <folder expanded="1" path="animation-folder/Cursor/" />
         <folder expanded="1" path="animation-folder/CursorSelectable/" />
-        <folder expanded="1" path="animation-folder/Forge/" />
+        <folder expanded="1" path="animation-folder/CrafterForge/" />
+        <folder expanded="1" path="animation-folder/CrafterOil/" />
+        <folder expanded="1" path="animation-folder/CrafterAnvil/" />
     </folders-expanded>
 </c2uistate>

@@ -7,6 +7,21 @@
             <sub-events>
                 <event-group description="" sid="5244459936067251" title="Items">
                     <sub-events>
+                        <event-block sid="8709577123021977">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="235898805247827" type="Slot">
+                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="8734219503992564" type="Slot">
+                                    <param id="0" name="Pin to">InventoryUI</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="3409067023772816">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="3128346147844996" type="Item">
@@ -18,61 +33,122 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="769494130328678" type="Item">
                                     <param id="0" name="Instance variable">Type</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="4007329963341441">
+                        <event-block sid="1960492931323026">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="6666835854958887" type="Item">
+                                <condition id="-7" name="Compare instance variable" sid="8766930814753862" type="Item">
                                     <param id="0" name="Instance variable">ItemID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="3034560790012742" type="Item">
+                                <action id="-10" name="Set value" sid="8624778631089263" type="Item">
                                     <param id="0" name="Instance variable">Type</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="627106163201474">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1231902612709487" type="Item">
+                                    <param id="0" name="Instance variable">ItemID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="7367818104999538" type="Item">
+                                    <param id="0" name="Instance variable">Type</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-block sid="8196377468442381">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="7028393534445425" type="Mouse">
+                            <param id="0" name="Object">Selectable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set cursor from sprite" sid="9496866984749984" type="Mouse">
+                            <param id="0" name="Sprite">CursorSelectable</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5229110283544404">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="3064134189316129" type="Mouse">
+                            <param id="0" name="Object">Selectable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set cursor from sprite" sid="3896282266828935" type="Mouse">
+                            <param id="0" name="Sprite">Cursor</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="8851858642503939">
                     <conditions>
                         <condition id="7" name="Cursor is over object" sid="6761018535275155" type="Mouse">
                             <param id="0" name="Object">Item</param>
                         </condition>
-                        <condition id="-16" name="Is on layer" sid="5054746888664298" type="Item">
-                            <param id="0" name="Layer">10</param>
+                        <condition id="-16" name="Is on layer" sid="1625127061955503" type="Item">
+                            <param id="0" name="Layer">&quot;UI&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="DragDrop" id="0" name="Set enabled" sid="480503395147001" type="Item">
-                            <param id="0" name="State">1</param>
+                        <action id="-3" name="Set position" sid="9088411358693952" type="Details">
+                            <param id="0" name="X">Item.X</param>
+                            <param id="1" name="Y">Item.Y + 2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1898202196725457" type="Details">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2545003366632067" type="Details">
+                            <param id="0" name="Text">Item.pointsForge&amp;&quot; | &quot;&amp;Item.PointsAnvil </param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5133487683572612">
+                <event-block sid="2908842839893833">
                     <conditions>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="8008313453835388" type="Mouse">
+                        <condition id="7" name="Cursor is over object" sid="7678587552139167" type="Mouse">
                             <param id="0" name="Object">Item</param>
                         </condition>
-                        <condition id="-16" name="Is on layer" sid="7562624042425215" type="Item">
-                            <param id="0" name="Layer">10</param>
+                        <condition id="-16" name="Is on layer" sid="3072444013258615" type="Item">
+                            <param id="0" name="Layer">&quot;Game&quot;</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9767688163617481" type="Item">
+                            <param id="0" name="Instance variable">IsCrafting</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="DragDrop" id="0" name="Set enabled" sid="5190442750149664" type="Item">
-                            <param id="0" name="State">0</param>
+                        <action id="-15" name="Set visible" sid="5748821756994013" type="Details">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="294847098981956">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="2347041374471946" type="Mouse">
+                            <param id="0" name="Object">Item</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5954867696788356" type="Details">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="6423367876140079">
                     <conditions>
                         <condition id="-16" name="Is on layer" sid="3316190918569989" type="Item">
-                            <param id="0" name="Layer">1</param>
+                            <param id="0" name="Layer">&quot;Game&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -84,7 +160,7 @@
                 <event-block sid="8613043174221301">
                     <conditions>
                         <condition id="-16" name="Is on layer" sid="681558816008143" type="Item">
-                            <param id="0" name="Layer">10</param>
+                            <param id="0" name="Layer">&quot;UI&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -115,7 +191,7 @@
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="5877868127699956" type="Player">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Boarder">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="97948626430709" type="Border">
                             <param id="0" name="Pin to">Player</param>
                             <param id="1" name="Mode">1</param>
                         </action>
@@ -146,19 +222,38 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="8709577123021977">
+                        <variable constant="0" name="Y" sid="1393847666449324" static="0" type="number">0</variable>
+                        <variable constant="0" name="X" sid="371206662204674" static="0" type="number">0</variable>
+                        <event-block sid="5240017171127654">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="235898805247827" type="Slot">
-                                    <param id="0" name="Instance variable">SlotNumber</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">4</param>
+                                <condition id="-10" name="For" sid="7568075005121207" type="System">
+                                    <param id="0" name="Name">&quot;lawlz&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">random(99)+1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Pin" id="0" name="Pin to object" sid="8734219503992564" type="Slot">
-                                    <param id="0" name="Pin to">InventoryUI</param>
-                                    <param id="1" name="Mode">0</param>
+                                <action id="-9" name="Set value" sid="6171357674804395" type="System">
+                                    <param id="0" name="Variable">X</param>
+                                    <param id="1" name="Value">random(854)</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="1345689870182294" type="System">
+                                    <param id="0" name="Variable">Y</param>
+                                    <param id="1" name="Value">random(480)</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="672795689221832" type="System">
+                                    <param id="0" name="Object to create">TreeTrunk</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">X</param>
+                                    <param id="3" name="Y">Y</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4069001661707201" type="System">
+                                    <param id="0" name="Object to create">Tree</param>
+                                    <param id="1" name="Layer">&quot;Funishings&quot;</param>
+                                    <param id="2" name="X">X</param>
+                                    <param id="3" name="Y">Y</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="4765082480263791" type="Tree" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -284,7 +379,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="300749933164212" type="Function">
-                                    <param id="0" name="Name">&quot;nextSlot14&quot;</param>
+                                    <param id="0" name="Name">&quot;nextSlot&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                                 <action id="-9" name="Set value" sid="7187289991874169" type="System">
@@ -339,7 +434,7 @@
                                                             <param id="1" name="Value">1</param>
                                                         </action>
                                                         <action id="-26" name="Move to layer" sid="1742962435016957" type="Item">
-                                                            <param id="0" name="Layer">10</param>
+                                                            <param id="0" name="Layer">&quot;UI&quot;</param>
                                                         </action>
                                                         <action id="-24" name="Move to top" sid="6042332077301274" type="Item" />
                                                         <action id="-4" name="Set position to another object" sid="2631519258981537" type="Item">
@@ -441,7 +536,7 @@
                                                             <param id="1" name="Value">1</param>
                                                         </action>
                                                         <action id="-26" name="Move to layer" sid="244829606136364" type="Item">
-                                                            <param id="0" name="Layer">10</param>
+                                                            <param id="0" name="Layer">&quot;UI&quot;</param>
                                                         </action>
                                                         <action id="-24" name="Move to top" sid="8136483466783457" type="Item" />
                                                         <action id="-4" name="Set position to another object" sid="7339326688691933" type="Item">
@@ -614,19 +709,14 @@
                                         <condition id="-7" name="Compare instance variable" sid="1361197185352934" type="Item">
                                             <param id="0" name="Instance variable">Type</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions />
                                     <sub-events>
                                         <event-block sid="7896065919573358">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="141280945404061" type="Player">
-                                                    <param id="0" name="Instance variable">ItemUsing</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">2</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="8208423684610246" type="Boarder">
+                                                <condition id="1" name="Is overlapping another object" sid="8208423684610246" type="Border">
                                                     <param id="0" name="Object">Crafters</param>
                                                 </condition>
                                             </conditions>
@@ -658,46 +748,9 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
-                                        <event-block sid="2797690275621487">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="5697748189978695" type="Player">
-                                                    <param id="0" name="Instance variable">ItemUsing</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
-                                                </condition>
-                                                <condition id="1" name="Is overlapping another object" sid="7585547641701144" type="Boarder">
-                                                    <param id="0" name="Object">Forge</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-11" name="Add to" sid="6060228653957941" type="Forge">
-                                                    <param id="0" name="Instance variable">FuelAmount</param>
-                                                    <param id="1" name="Value">10</param>
-                                                </action>
-                                                <action id="-10" name="Set value" sid="1729129653972302" type="Player">
-                                                    <param id="0" name="Instance variable">ItemUsing</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                                <action id="-9" name="Destroy" sid="8465297846967621" type="Item" />
-                                                <action id="3" name="Set at XY" sid="4394969651368108" type="Inventory">
-                                                    <param id="0" name="X">Inventory.SelectedItem</param>
-                                                    <param id="1" name="Y">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </action>
-                                                <action id="-13" name="Set boolean" sid="9503824066619593" type="Slot">
-                                                    <param id="0" name="Instance variable">IsFull</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
                                         <event-block sid="3812638675755993">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="9970875990299171" type="Item">
-                                                    <param id="0" name="Instance variable">Type</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
-                                                </condition>
-                                                <condition id="1" inverted="1" name="Is overlapping another object" sid="730337086103966" type="Boarder">
+                                                <condition id="1" inverted="1" name="Is overlapping another object" sid="730337086103966" type="Border">
                                                     <param id="0" name="Object">Crafters</param>
                                                 </condition>
                                             </conditions>
@@ -720,6 +773,45 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="1958559881178232" type="Item">
                                                     <param id="0" name="Instance variable">InventorySlotNumber</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="4272533452028983">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="2265656564137594" type="Item">
+                                            <param id="0" name="Instance variable">Type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="4383148684484149">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="2019477201520443" type="Border">
+                                                    <param id="0" name="Object">CrafterForge</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Add to" sid="8445059832997571" type="CrafterForge">
+                                                    <param id="0" name="Instance variable">FuelAmount</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="9652433431536083" type="Player">
+                                                    <param id="0" name="Instance variable">ItemUsing</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-9" name="Destroy" sid="1062264409444883" type="Item" />
+                                                <action id="3" name="Set at XY" sid="2120196787912138" type="Inventory">
+                                                    <param id="0" name="X">Inventory.SelectedItem</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="4847646493139542" type="Slot">
+                                                    <param id="0" name="Instance variable">IsFull</param>
                                                     <param id="1" name="Value">0</param>
                                                 </action>
                                             </actions>
@@ -788,7 +880,7 @@
                                     <param id="2" name="Value">0</param>
                                 </condition>
                                 <condition id="-16" name="Is on layer" sid="9212443335741382" type="Item">
-                                    <param id="0" name="Layer">1</param>
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
                                 </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7255539065639084" type="Item">
                                     <param id="0" name="Instance variable">IsCrafting</param>
@@ -819,7 +911,7 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-26" name="Move to layer" sid="3349229079543883" type="Item">
-                                            <param id="0" name="Layer">10</param>
+                                            <param id="0" name="Layer">&quot;UI&quot;</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="4854372228778089" type="Item" />
                                         <action id="-4" name="Set position to another object" sid="5226511253142977" type="Item">
@@ -946,18 +1038,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="5010633042988115">
-                                    <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="439759595702447" type="Mouse">
-                                            <param id="0" name="Object">Slot</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Set cursor from sprite" sid="7635986606721723" type="Mouse">
-                                            <param id="0" name="Sprite">CursorSelectable</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                                 <event-block sid="3270005937611662">
                                     <conditions>
                                         <condition id="7" inverted="1" name="Cursor is over object" sid="5714640571374651" type="Mouse">
@@ -973,18 +1053,6 @@
                                         <action id="-13" name="Set boolean" sid="2083231993221004" type="Slot">
                                             <param id="0" name="Instance variable">IsSelected</param>
                                             <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="8656583307956325">
-                                    <conditions>
-                                        <condition id="7" inverted="1" name="Cursor is over object" sid="797397019416284" type="Mouse">
-                                            <param id="0" name="Object">Slot</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Set cursor from sprite" sid="7255405714369532" type="Mouse">
-                                            <param id="0" name="Sprite">Cursor</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1567,13 +1635,112 @@
         </event-group>
         <event-group description="" sid="1686345179326039" title="Crafting">
             <sub-events>
+                <event-group description="" sid="8088154599533155" title="Recepies" />
                 <event-group description="" sid="142851118187115" title="Blacksmithing">
                     <sub-events>
+                        <event-block sid="1812391048781282">
+                            <conditions>
+                                <condition id="0" name="On function" sid="2332623014639021" type="Function">
+                                    <param id="0" name="Name">&quot;CraftStart&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="6968152047379507">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="8670926237612849" type="Border">
+                                            <param id="0" name="Object">CrafterAnvil</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2766702347223848" type="CrafterAnvil">
+                                            <param id="0" name="Instance variable">IsCrafting</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="1610568476379788" type="Function">
+                                            <param id="0" name="Name">&quot;CraftAnvil&quot;</param>
+                                            <param id="1" name="Parameter {n}">Function.Param(2){###}Function.Param(3)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="6323318873292528">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="3931168215565021" type="Border">
+                                                    <param id="0" name="Object">CrafterForge</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="2063996766279233" type="CrafterForge">
+                                                    <param id="0" name="Instance variable">Lit</param>
+                                                </condition>
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7333386197934985" type="CrafterForge">
+                                                    <param id="0" name="Instance variable">IsCrafting</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="3080451128925416" type="Function">
+                                                    <param id="0" name="Name">&quot;CraftForge&quot;</param>
+                                                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="3600868055907201">
+                            <conditions>
+                                <condition id="0" name="On function" sid="3434358771098409" type="Function">
+                                    <param id="0" name="Name">&quot;CraftStart&quot;</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="7840642620292866" type="Border">
+                                    <param id="0" name="Object">CrafterForge</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2389926164040617" type="CrafterForge">
+                                    <param id="0" name="Instance variable">Lit</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set return value" sid="58899009559814" type="Function">
+                                    <param id="0" name="Value">-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1808084231856964">
+                            <conditions>
+                                <condition id="0" name="On function" sid="3309525483215147" type="Function">
+                                    <param id="0" name="Name">&quot;CraftStart&quot;</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="8877640111759089" type="Border">
+                                    <param id="0" name="Object">CrafterForge</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="7798137160686657" type="CrafterForge">
+                                    <param id="0" name="Instance variable">Lit</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="3923913315602258" type="CrafterForge">
+                                    <param id="0" name="Instance variable">IsCrafting</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set return value" sid="9618291688238905" type="Function">
+                                    <param id="0" name="Value">-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="8214078418685718" title="Anvil">
+                            <sub-events>
+                                <event-block sid="5327724481584504">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="2091460142440937" type="Function">
+                                            <param id="0" name="Name">&quot;CraftAnvil&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                         <event-group description="" sid="8456124377830397" title="Forge">
                             <sub-events>
                                 <event-block sid="5863611280387414">
                                     <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="4221675069527508" type="Forge">
+                                        <condition id="-8" name="Is boolean instance variable set" sid="4221675069527508" type="CrafterForge">
                                             <param id="0" name="Instance variable">IsCrafting</param>
                                         </condition>
                                         <condition id="-6" name="Every X seconds" sid="5727448398985764" type="System">
@@ -1591,18 +1758,21 @@
                                                     <param id="0" name="Instance variable">cStopped</param>
                                                 </condition>
                                                 <condition id="-7" name="Compare instance variable" sid="6714152998878255" type="Item">
-                                                    <param id="0" name="Instance variable">csForge</param>
+                                                    <param id="0" name="Instance variable">pointsForge</param>
                                                     <param id="1" name="Comparison">2</param>
                                                     <param id="2" name="Value">1000</param>
                                                 </condition>
                                                 <condition id="-14" name="Pick by unique ID" sid="4466182327290268" type="Item">
-                                                    <param id="0" name="Unique ID">Forge.itemUID</param>
+                                                    <param id="0" name="Unique ID">CrafterForge.itemUID</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-11" name="Add to" sid="847861819148584" type="Item">
-                                                    <param id="0" name="Instance variable">csForge</param>
+                                                    <param id="0" name="Instance variable">pointsForge</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="2254765615781881" type="CraftDetails">
+                                                    <param id="0" name="Text">Item.pointsForge&amp;&quot; | &quot;&amp;Item.PointsAnvil</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1613,18 +1783,18 @@
                                         <condition id="0" name="On function" sid="8453439064973021" type="Function">
                                             <param id="0" name="Name">&quot;CraftStart&quot;</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="9661578544521112" type="Boarder">
-                                            <param id="0" name="Object">Forge</param>
+                                        <condition id="1" name="Is overlapping another object" sid="9661578544521112" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
                                         </condition>
                                     </conditions>
                                     <actions />
                                     <sub-events>
                                         <event-block sid="5713406238928388">
                                             <conditions>
-                                                <condition id="-8" name="Is boolean instance variable set" sid="9087561792491502" type="Forge">
+                                                <condition id="-8" name="Is boolean instance variable set" sid="9087561792491502" type="CrafterForge">
                                                     <param id="0" name="Instance variable">Lit</param>
                                                 </condition>
-                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4110607728251126" type="Forge">
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4110607728251126" type="CrafterForge">
                                                     <param id="0" name="Instance variable">IsCrafting</param>
                                                 </condition>
                                             </conditions>
@@ -1642,10 +1812,10 @@
                                         <condition id="0" name="On function" sid="5641491919264352" type="Function">
                                             <param id="0" name="Name">&quot;CraftStart&quot;</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="5504275328701965" type="Boarder">
-                                            <param id="0" name="Object">Forge</param>
+                                        <condition id="1" name="Is overlapping another object" sid="5504275328701965" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
                                         </condition>
-                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9094743766301269" type="Forge">
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9094743766301269" type="CrafterForge">
                                             <param id="0" name="Instance variable">Lit</param>
                                         </condition>
                                     </conditions>
@@ -1660,13 +1830,13 @@
                                         <condition id="0" name="On function" sid="9033443135999578" type="Function">
                                             <param id="0" name="Name">&quot;CraftStart&quot;</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="3017877960261721" type="Boarder">
-                                            <param id="0" name="Object">Forge</param>
+                                        <condition id="1" name="Is overlapping another object" sid="3017877960261721" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
                                         </condition>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="4730302058069005" type="Forge">
+                                        <condition id="-8" name="Is boolean instance variable set" sid="4730302058069005" type="CrafterForge">
                                             <param id="0" name="Instance variable">Lit</param>
                                         </condition>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="4128066526375757" type="Forge">
+                                        <condition id="-8" name="Is boolean instance variable set" sid="4128066526375757" type="CrafterForge">
                                             <param id="0" name="Instance variable">IsCrafting</param>
                                         </condition>
                                     </conditions>
@@ -1675,6 +1845,48 @@
                                             <param id="0" name="Value">-1</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="963706062522024">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="3090012849184756" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="1810897163987787" type="CraftDetails">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7174065511329865">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="8288125387206501" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4269688324123148" type="CraftDetails">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="5602203534178641" type="CraftDetails">
+                                            <param id="0" name="X">CrafterForge.X</param>
+                                            <param id="1" name="Y">CrafterForge.Y - 2</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="9202852418997279">
+                                            <conditions>
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="857807236053257" type="CrafterForge">
+                                                    <param id="0" name="Instance variable">IsCrafting</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="3290791822854708" type="CraftDetails">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="830005851940438">
                                     <conditions>
@@ -1689,20 +1901,20 @@
                                                 <condition id="-14" name="Pick by unique ID" sid="5565757578733083" type="Item">
                                                     <param id="0" name="Unique ID">Function.Param(0)</param>
                                                 </condition>
-                                                <condition id="-14" name="Pick by unique ID" sid="8412594941418989" type="Forge">
+                                                <condition id="-14" name="Pick by unique ID" sid="8412594941418989" type="CrafterForge">
                                                     <param id="0" name="Unique ID">Function.Param(1)</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-4" name="Set position to another object" sid="3240292732510507" type="Item">
-                                                    <param id="0" name="Object">Forge</param>
+                                                    <param id="0" name="Object">CrafterForge</param>
                                                     <param id="1" name="Image point (optional)">0</param>
                                                 </action>
                                                 <action id="-26" name="Move to layer" sid="7139896868092896" type="Item">
                                                     <param id="0" name="Layer">1</param>
                                                 </action>
                                                 <action id="-24" name="Move to top" sid="8984894914624988" type="Item" />
-                                                <action id="-13" name="Set boolean" sid="6659484452163981" type="Forge">
+                                                <action id="-13" name="Set boolean" sid="6659484452163981" type="CrafterForge">
                                                     <param id="0" name="Instance variable">IsCrafting</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
@@ -1710,7 +1922,7 @@
                                                     <param id="0" name="Instance variable">IsCrafting</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="7262274556174776" type="Forge">
+                                                <action id="-10" name="Set value" sid="7262274556174776" type="CrafterForge">
                                                     <param id="0" name="Instance variable">itemUID</param>
                                                     <param id="1" name="Value">Item.UID</param>
                                                 </action>
@@ -1748,42 +1960,30 @@
                                 </event-block>
                                 <event-block sid="2010492083349093">
                                     <conditions>
-                                        <condition id="-18" name="On created" sid="8167099957220663" type="Forge" />
+                                        <condition id="-18" name="On created" sid="8167099957220663" type="CrafterForge" />
                                     </conditions>
                                     <actions>
-                                        <action id="2" name="Stop" sid="9495175312506125" type="Forge" />
-                                        <action id="-10" name="Set value" sid="5033429344678901" type="Forge">
+                                        <action id="2" name="Stop" sid="9495175312506125" type="CrafterForge" />
+                                        <action id="-10" name="Set value" sid="5033429344678901" type="CrafterForge">
                                             <param id="0" name="Instance variable">FuelAmount</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="9401724943767885">
-                                    <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="4775088098945657" type="Mouse">
-                                            <param id="0" name="Object">Forge</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Set cursor from sprite" sid="7829491953416731" type="Mouse">
-                                            <param id="0" name="Sprite">CursorSelectable</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                                 <event-block sid="3292734446262076">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="1581024546285743" type="Forge">
+                                        <condition id="-7" name="Compare instance variable" sid="1581024546285743" type="CrafterForge">
                                             <param id="0" name="Instance variable">FuelAmount</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="1392071969404923" type="Forge">
+                                        <action id="4" name="Set animation" sid="1392071969404923" type="CrafterForge">
                                             <param id="0" name="Animation">&quot;empty&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="336528439011346" type="Forge">
+                                        <action id="-13" name="Set boolean" sid="336528439011346" type="CrafterForge">
                                             <param id="0" name="Instance variable">Lit</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -1791,14 +1991,14 @@
                                 </event-block>
                                 <event-block sid="425469375922163">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="8283845093359946" type="Forge">
+                                        <condition id="-7" name="Compare instance variable" sid="8283845093359946" type="CrafterForge">
                                             <param id="0" name="Instance variable">FuelAmount</param>
                                             <param id="1" name="Comparison">4</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-13" name="Set boolean" sid="2660782346915624" type="Forge">
+                                        <action id="-13" name="Set boolean" sid="2660782346915624" type="CrafterForge">
                                             <param id="0" name="Instance variable">Lit</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
@@ -1809,18 +2009,18 @@
                                                 <condition id="-6" name="Every X seconds" sid="4441984739578681" type="System">
                                                     <param id="0" name="Interval (seconds)">0.1</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="5485547691414406" type="Forge">
+                                                <condition id="-7" name="Compare instance variable" sid="5485547691414406" type="CrafterForge">
                                                     <param id="0" name="Instance variable">FuelAmount</param>
                                                     <param id="1" name="Comparison">4</param>
                                                     <param id="2" name="Value">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-10" name="Set value" sid="5557063179661987" type="Forge">
+                                                <action id="-10" name="Set value" sid="5557063179661987" type="CrafterForge">
                                                     <param id="0" name="Instance variable">FuelAmount</param>
-                                                    <param id="1" name="Value">floor((Forge.FuelAmount * 10)-1) / 10</param>
+                                                    <param id="1" name="Value">floor((CrafterForge.FuelAmount * 10)-1) / 10</param>
                                                 </action>
-                                                <action id="4" name="Set animation" sid="3046736434636802" type="Forge">
+                                                <action id="4" name="Set animation" sid="3046736434636802" type="CrafterForge">
                                                     <param id="0" name="Animation">&quot;Lit&quot;</param>
                                                     <param id="1" name="From">0</param>
                                                 </action>
@@ -1828,17 +2028,116 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
-                                <event-block sid="6188104621714676">
+                                <event-block sid="8958749127117013">
                                     <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="8430599290334609" type="Forge">
+                                        <condition id="0" name="On key pressed" sid="4606866246982459" type="Keyboard">
+                                            <param id="0" name="Key">32 (Space)</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="3474851214445825" type="CrafterForge">
                                             <param id="0" name="Instance variable">IsCrafting</param>
                                         </condition>
-                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4530489268968254" type="Forge">
+                                        <condition id="-8" name="Is boolean instance variable set" sid="2630812051351592" type="CrafterForge">
+                                            <param id="0" name="Instance variable">Lit</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="7366015666731778" type="Border">
+                                            <param id="0" name="Object">CrafterForge</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="4351825252247266" type="CrafterForge">
+                                            <param id="0" name="Instance variable">IsCrafting</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="334766389716496">
+                                            <conditions>
+                                                <condition id="-14" name="Pick by unique ID" sid="4020274295763995" type="Item">
+                                                    <param id="0" name="Unique ID">CrafterForge.itemUID</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="1839437205756792" type="Function">
+                                                    <param id="0" name="Name">&quot;nextSlot&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="5479228723968001" type="Item">
+                                                    <param id="0" name="Instance variable">IsCrafting</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="4797805218993832">
+                                                    <conditions>
+                                                        <condition id="-8" inverted="1" name="Compare two values" sid="2703258039754786" type="System">
+                                                            <param id="0" name="First value">Function.ReturnValue</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">-1</param>
+                                                        </condition>
+                                                        <condition id="-34" name="Pick by evaluate" sid="2025815336998527" type="System">
+                                                            <param id="0" name="Object">Slot</param>
+                                                            <param id="1" name="Expression">Slot.SlotNumber=Function.ReturnValue</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-13" name="Set boolean" sid="1994106675149398" type="Slot">
+                                                            <param id="0" name="Instance variable">IsFull</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-26" name="Move to layer" sid="5137501943180193" type="Item">
+                                                            <param id="0" name="Layer">&quot;UI&quot;</param>
+                                                        </action>
+                                                        <action id="-24" name="Move to top" sid="8171237481187066" type="Item" />
+                                                        <action id="-4" name="Set position to another object" sid="7191597262515131" type="Item">
+                                                            <param id="0" name="Object">Slot</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
+                                                        </action>
+                                                        <action id="-24" name="Move to top" sid="2621551737462117" type="Slot" />
+                                                        <action id="-8" name="Set angle" sid="7516439228083871" type="Item">
+                                                            <param id="0" name="Angle">0</param>
+                                                        </action>
+                                                        <action id="-10" name="Set value" sid="4653700905964658" type="Item">
+                                                            <param id="0" name="Instance variable">InventorySlotNumber</param>
+                                                            <param id="1" name="Value">slot.SlotNumber</param>
+                                                        </action>
+                                                    </actions>
+                                                    <sub-events>
+                                                        <event-block sid="2346045609869708">
+                                                            <conditions>
+                                                                <condition id="-7" name="Compare instance variable" sid="6590004493579236" type="Slot">
+                                                                    <param id="0" name="Instance variable">SlotNumber</param>
+                                                                    <param id="1" name="Comparison">4</param>
+                                                                    <param id="2" name="Value">4</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action behavior="Pin" id="0" name="Pin to object" sid="839266338405154" type="Item">
+                                                                    <param id="0" name="Pin to">Slot</param>
+                                                                    <param id="1" name="Mode">0</param>
+                                                                </action>
+                                                                <action id="-13" name="Set boolean" sid="4069123960814611" type="Item">
+                                                                    <param id="0" name="Instance variable">IsInInventory</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="6188104621714676">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="8430599290334609" type="CrafterForge">
+                                            <param id="0" name="Instance variable">IsCrafting</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4530489268968254" type="CrafterForge">
                                             <param id="0" name="Instance variable">Lit</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-13" name="Set boolean" sid="2588012306572594" type="Forge">
+                                        <action id="-13" name="Set boolean" sid="2588012306572594" type="CrafterForge">
                                             <param id="0" name="Instance variable">IsCrafting</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -1847,7 +2146,7 @@
                                         <event-block sid="6681878437142995">
                                             <conditions>
                                                 <condition id="-14" name="Pick by unique ID" sid="3570258662118822" type="Item">
-                                                    <param id="0" name="Unique ID">Forge.itemUID</param>
+                                                    <param id="0" name="Unique ID">CrafterForge.itemUID</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -1879,7 +2178,7 @@
                                                             <param id="1" name="Value">1</param>
                                                         </action>
                                                         <action id="-26" name="Move to layer" sid="9933817299373585" type="Item">
-                                                            <param id="0" name="Layer">10</param>
+                                                            <param id="0" name="Layer">&quot;UI&quot;</param>
                                                         </action>
                                                         <action id="-24" name="Move to top" sid="7376846022122152" type="Item" />
                                                         <action id="-4" name="Set position to another object" sid="1840521011267898" type="Item">
@@ -1958,5 +2257,64 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-group description="" sid="6473681239738945" title="Oil" />
+        <event-block sid="531800589367515">
+            <conditions>
+                <condition id="0" name="On function" sid="5854995174211144" type="Function">
+                    <param id="0" name="Name">&quot;CraftStart&quot;</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="3525668604457783" type="Border">
+                    <param id="0" name="Object">CrafterOil</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9922829395338247">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="7663460492034941" type="Function">
+                            <param id="0" name="Name">&quot;bCraftFinish&quot;</param>
+                            <param id="1" name="Parameter {n}">Function.Param(0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2137425402952568">
+            <conditions>
+                <condition id="0" name="On function" sid="1036272368469538" type="Function">
+                    <param id="0" name="Name">&quot;bCraftFinish&quot;</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="919770518334138" type="Item">
+                    <param id="0" name="Unique ID">Function.Param(0)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7626929789601694">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4629682474463157" type="Item">
+                            <param id="0" name="Instance variable">pointsForge</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="3223899212707505" type="Item">
+                            <param id="0" name="Instance variable">ItemID</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2870377182525184" type="Item">
+                            <param id="0" name="Instance variable">pointsForge</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1514175844337223" type="Item">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
