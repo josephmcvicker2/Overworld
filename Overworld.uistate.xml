@@ -23,10 +23,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="PlayerLayers" />
         <family expanded="1" name="Crafters" />
         <family expanded="1" name="Selectable" />
+        <family expanded="0" name="NotBuildableOn" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
@@ -52,5 +53,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/CrafterOil/" />
         <folder expanded="1" path="animation-folder/CrafterAnvil/" />
         <folder expanded="1" path="animation-folder/CrafterGrind/" />
+        <folder expanded="1" path="animation-folder/Block/" />
     </folders-expanded>
 </c2uistate>

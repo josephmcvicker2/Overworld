@@ -4,17 +4,17 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>366.705</position-x>
-        <position-y>110.918</position-y>
-        <position-z>25.5476</position-z>
-        <lookat-x>366.705</lookat-x>
-        <lookat-y>110.918</lookat-y>
+        <position-x>211.609</position-x>
+        <position-y>81.3824</position-y>
+        <position-z>17.6951</position-z>
+        <lookat-x>211.609</lookat-x>
+        <lookat-y>81.3824</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
-    <snap-to-grid>0</snap-to-grid>
-    <show-grid>0</show-grid>
-    <snap-width>32</snap-width>
-    <snap-height>32</snap-height>
+    <snap-to-grid>1</snap-to-grid>
+    <show-grid>1</show-grid>
+    <snap-width>8</snap-width>
+    <snap-height>8</snap-height>
     <show-collision-polys>0</show-collision-polys>
     <translucent-inactive-layers>0</translucent-inactive-layers>
     <properties>
@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <layers>
         <layer locked="0" name="Map" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Game" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="UI Game" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TopGame" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Hands" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Clothes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Pack" parallax-in-editor="0" visible="1" />

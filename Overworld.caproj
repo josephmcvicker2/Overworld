@@ -455,6 +455,7 @@
                 <instance-variable name="cStopped" sid="5592059976212863" type="boolean" />
                 <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
                 <instance-variable name="PointsGrind" sid="2734224885636874" type="number" />
+                <instance-variable name="CraftingFormula" sid="6462203887256451" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -463,9 +464,12 @@
                 <behavior-type name="Sine" sid="6354034471367551">
                     <behavior id="Sin" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="2992870773844726">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
                         <collision-poly>
@@ -497,6 +501,17 @@
                             <point x="0.5" y="0.8125" />
                             <point x="0.125" y="0.875" />
                             <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\p14yd_000\Documents\GitHub\Overworld\Animations\CrafterOil\Default\000.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0625" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -810,6 +825,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Block" sid="9870244989968704">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="718543438315948">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7850082547327916" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\p14yd_000\Documents\GitHub\Overworld\Animations\CrafterOil\Default\000.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="PlayerLayers" plugin-id="Sprite" sid="6391179049397182">
@@ -844,6 +882,13 @@
                 <member>Player</member>
                 <member>Slot</member>
                 <member>Tree</member>
+            </members>
+        </family>
+        <family name="NotBuildableOn" plugin-id="Sprite" sid="4910814922269115">
+            <members>
+                <member>Item</member>
+                <member>Player</member>
+                <member>TreeTrunk</member>
             </members>
         </family>
     </families>
