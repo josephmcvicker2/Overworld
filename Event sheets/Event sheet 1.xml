@@ -88,6 +88,33 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="2090445113224138">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="1774702101632658" type="Mouse">
+                                    <param id="0" name="Object">Item</param>
+                                </condition>
+                                <condition id="-16" name="Is on layer" sid="6783053294134576" type="Item">
+                                    <param id="0" name="Layer">&quot;UI&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="9390160386524611" type="Item">
+                                    <param id="0" name="Instance variable">Type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="3045510764349169" type="Details">
+                                    <param id="0" name="X">Item.X</param>
+                                    <param id="1" name="Y">Item.Y + 2</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8322207665230167" type="Details">
+                                    <param id="0" name="Text">Item.Durability</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7891239089517348" type="Details">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="2908842839893833">
                             <conditions>
                                 <condition id="7" name="Cursor is over object" sid="7678587552139167" type="Mouse">
@@ -2157,22 +2184,6 @@
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
-                                            <sub-events>
-                                                <event-block sid="3247726198533661">
-                                                    <conditions>
-                                                        <condition id="-7" name="Compare instance variable" sid="185419548514972" type="CraftDetails">
-                                                            <param id="0" name="Instance variable">Mode</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">1</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="0" name="Set text" sid="8056005247580238" type="CraftDetails">
-                                                            <param id="0" name="Text">Item.PointsForge&amp;&quot; | &quot;&amp;Item.PointsAnvil&amp;&quot; | &quot;&amp;Item.PointsGrind</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-group>
