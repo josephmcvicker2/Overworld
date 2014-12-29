@@ -14,6 +14,9 @@
                                         <condition id="1" inverted="1" name="Is overlapping another object" sid="2254311795726307" type="Slot">
                                             <param id="0" name="Object">Item</param>
                                         </condition>
+                                        <condition id="-16" name="Is on layer" sid="5885993846091853" type="Item">
+                                            <param id="0" name="Layer">&quot;UI&quot;</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-13" name="Set boolean" sid="9365180434651411" type="Slot">
@@ -26,6 +29,9 @@
                                     <conditions>
                                         <condition id="1" name="Is overlapping another object" sid="686895472673542" type="Slot">
                                             <param id="0" name="Object">Item</param>
+                                        </condition>
+                                        <condition id="-16" name="Is on layer" sid="8386457062856924" type="Item">
+                                            <param id="0" name="Layer">&quot;UI&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -241,6 +247,16 @@
                                 <action id="-10" name="Set value" sid="272926029378561" type="Item">
                                     <param id="0" name="Instance variable">ItemID</param>
                                     <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="2726186258428672" type="Red">
+                                    <param id="0" name="Audio file">Red</param>
+                                    <param id="1" name="Loop">1</param>
+                                    <param id="2" name="Volume">-30</param>
+                                    <param id="3" name="Object">Player</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;Player Music&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -825,6 +841,10 @@
                         <action id="5" name="Set frame" sid="1530100889725057" type="Legs">
                             <param id="0" name="Frame number">0</param>
                         </action>
+                        <action id="-22" name="Set angle toward position" sid="461765155386404" type="Legs">
+                            <param id="0" name="X">mouse.X</param>
+                            <param id="1" name="Y">mouse.Y</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -1217,6 +1237,10 @@
                                             <param id="1" name="Value">10</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="1062264409444883" type="Item" />
+                                        <action id="-13" name="Set boolean" sid="8200942575749914" type="Slot">
+                                            <param id="0" name="Instance variable">IsFull</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="3" name="Set at XY" sid="2120196787912138" type="Inventory">
                                             <param id="0" name="X">Inventory.SelectedSlot</param>
                                             <param id="1" name="Y">0</param>

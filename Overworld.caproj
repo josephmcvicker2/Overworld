@@ -11,6 +11,7 @@
     <saved-with-version>19200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -902,6 +903,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Red" sid="1048469576944066">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="PlayerLayers" plugin-id="Sprite" sid="6391179049397182">
@@ -955,9 +959,27 @@
         <global-instance type="Mouse" uid="1" />
         <global-instance type="Keyboard" uid="3" />
         <global-instance type="Function" uid="19" />
+        <global-instance type="Red" uid="54">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>Music only</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="Red.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
