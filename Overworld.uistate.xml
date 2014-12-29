@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout active="1" order="0">Layout 1</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,7 +46,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Slot/" />
         <folder expanded="1" path="animation-folder/Item/" />
         <folder expanded="1" path="animation-folder/InventoryUI/" />
-        <folder expanded="1" path="animation-folder/Dragger/" />
         <folder expanded="1" path="animation-folder/Cursor/" />
         <folder expanded="1" path="animation-folder/CursorSelectable/" />
         <folder expanded="1" path="animation-folder/CrafterForge/" />
@@ -54,7 +53,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/CrafterAnvil/" />
         <folder expanded="1" path="animation-folder/CrafterGrind/" />
         <folder expanded="1" path="animation-folder/Block/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Light/" />
     </folders-expanded>
 </c2uistate>

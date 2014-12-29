@@ -19,7 +19,6 @@
         <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -32,8 +31,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>400</width>
-        <height>200</height>
+        <width>200</width>
+        <height>112</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -452,10 +451,9 @@
                 <instance-variable name="PointsAnvil" sid="3872234801366928" type="number" />
                 <instance-variable name="PointsForge" sid="35078250406227" type="number" />
                 <instance-variable name="IsCrafting" sid="843292748331894" type="boolean" />
-                <instance-variable name="cStopped" sid="5592059976212863" type="boolean" />
-                <instance-variable name="Moving" sid="6528690501900117" type="boolean" />
                 <instance-variable name="PointsGrind" sid="2734224885636874" type="number" />
                 <instance-variable name="CraftingFormula" sid="6462203887256451" type="number" />
+                <instance-variable name="Durability" sid="3382381356164768" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -469,7 +467,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
                         <collision-poly>
@@ -514,6 +512,18 @@
                             <point x="0.0625" y="0.5" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\AxeIron.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -548,27 +558,6 @@
             <instance-variables>
                 <instance-variable name="OverlapShow" sid="4805572380090186" type="boolean" />
             </instance-variables>
-        </object-type>
-        <object-type name="Dragger" sid="716998526304776">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="DragDrop" sid="9442604638230136">
-                    <behavior id="DragnDrop" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3310983221660869" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Inventory Dragger.png">
-                        <collision-poly>
-                            <point x="0.0104167" y="0.166667" />
-                            <point x="0.5" y="0" />
-                            <point x="0.989583" y="0.166667" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Cursor" sid="4929715900376">
             <plugin id="Sprite" />
@@ -851,14 +840,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="2326948595349409">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5991582970189796" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Light" sid="2543786341796434">
             <plugin id="Sprite" />
             <instance-variables>
@@ -871,6 +852,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\p14yd_000\Documents\Night00.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="3070267103046245">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
@@ -901,7 +885,6 @@
                 <member>CrafterForge</member>
                 <member>CrafterGrind</member>
                 <member>CrafterOil</member>
-                <member>Dragger</member>
                 <member>Item</member>
                 <member>Player</member>
                 <member>Slot</member>

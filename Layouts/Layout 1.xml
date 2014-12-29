@@ -159,10 +159,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -215,10 +214,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -271,10 +269,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -327,10 +324,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -383,10 +379,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -764,10 +759,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -820,10 +814,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -876,10 +869,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -932,10 +924,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -988,10 +979,9 @@
                         <PointsAnvil>0</PointsAnvil>
                         <PointsForge>0</PointsForge>
                         <IsCrafting>false</IsCrafting>
-                        <cStopped>false</cStopped>
-                        <Moving>false</Moving>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
+                        <Durability>0</Durability>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1431,8 +1421,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>200</x>
-                        <y>194</y>
+                        <x>100</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>48</width>
                         <height>12</height>
@@ -1462,8 +1452,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>185</x>
-                        <y>194</y>
+                        <x>85</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1493,8 +1483,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>195</x>
-                        <y>194</y>
+                        <x>95</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1524,8 +1514,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>205</x>
-                        <y>194</y>
+                        <x>105</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1555,8 +1545,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>215</x>
-                        <y>194</y>
+                        <x>115</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1583,41 +1573,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>376</x>
-                        <y>100</y>
+                        <x>176</x>
+                        <y>56</y>
                         <z>0</z>
                         <width>48</width>
                         <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Dragger" uid="27">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="DragDrop">
-                            <properties>
-                                <axes>Both</axes>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>376</x>
-                        <y>85.5</y>
-                        <z>0</z>
-                        <width>48</width>
-                        <height>3</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1644,8 +1604,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>361</x>
-                        <y>98.5</y>
+                        <x>161</x>
+                        <y>54.5</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1675,8 +1635,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>371</x>
-                        <y>98.5</y>
+                        <x>171</x>
+                        <y>54.5</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1706,8 +1666,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>381</x>
-                        <y>98.5</y>
+                        <x>181</x>
+                        <y>54.5</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1737,8 +1697,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>391</x>
-                        <y>98.5</y>
+                        <x>161</x>
+                        <y>66</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1768,8 +1728,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>361</x>
-                        <y>110</y>
+                        <x>171</x>
+                        <y>66</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1799,8 +1759,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>371</x>
-                        <y>110</y>
+                        <x>181</x>
+                        <y>66</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1830,8 +1790,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>381</x>
-                        <y>110</y>
+                        <x>191</x>
+                        <y>66</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1850,7 +1810,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <SlotNumber>13</SlotNumber>
+                        <SlotNumber>8</SlotNumber>
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
@@ -1861,8 +1821,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>391</x>
-                        <y>110</y>
+                        <x>191</x>
+                        <y>54.5</y>
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
@@ -1932,16 +1892,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>200</x>
-                        <y>100</y>
+                        <x>100</x>
+                        <y>56</y>
                         <z>0</z>
-                        <width>400</width>
-                        <height>200</height>
+                        <width>200</width>
+                        <height>112</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>
@@ -1967,7 +1927,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-7,400,0</font>
+                        <font>Segoe Print,-7,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -2016,7 +1976,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-7,400,0</font>
+                        <font>Segoe Print,-7,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
