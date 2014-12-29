@@ -54,5 +54,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/CrafterGrind/" />
         <folder expanded="1" path="animation-folder/Block/" />
         <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/Legs/" />
     </folders-expanded>
 </c2uistate>

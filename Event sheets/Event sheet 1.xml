@@ -182,6 +182,9 @@
                                 <action id="-16" name="Set opacity" sid="7515427827481901" type="Light">
                                     <param id="0" name="Opacity">Light.Timer</param>
                                 </action>
+                                <action id="-8" name="Set angle" sid="4994843267731001" type="Legs">
+                                    <param id="0" name="Angle">Player.8Direction.MovingAngle</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -201,6 +204,10 @@
                                     <param id="1" name="Mode">1</param>
                                 </action>
                                 <action behavior="Pin2" id="0" name="Pin to object" sid="6212005169274437" type="PlayerLayers">
+                                    <param id="0" name="Pin to">Player</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="8621099836637184" type="Legs">
                                     <param id="0" name="Pin to">Player</param>
                                     <param id="1" name="Mode">1</param>
                                 </action>
@@ -789,6 +796,9 @@
                         <action id="3" name="Start" sid="8693138615740304" type="PlayerLayers">
                             <param id="0" name="From">0</param>
                         </action>
+                        <action id="3" name="Start" sid="8298397748270273" type="Legs">
+                            <param id="0" name="From">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9276702825142322">
@@ -809,6 +819,10 @@
                     <actions>
                         <action id="2" name="Stop" sid="9363034395777368" type="PlayerLayers" />
                         <action id="5" name="Set frame" sid="4738835535532603" type="PlayerLayers">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="2921092466952294" type="Legs" />
+                        <action id="5" name="Set frame" sid="1530100889725057" type="Legs">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>

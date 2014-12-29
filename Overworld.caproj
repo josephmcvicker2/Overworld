@@ -231,37 +231,30 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands00.png">
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Hands00.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Hands01.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands01.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Hands02.png">
                         <collision-poly>
-                            <point x="1" y="0" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands02.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Hands03.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hands\hands03.png">
-                        <collision-poly>
                             <point x="1" y="0" />
                             <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -285,13 +278,44 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Clothes\clothes02.png">
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Clothes00.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Clothes01.png">
+                        <collision-poly>
+                            <point x="0.5625" y="0.4375" />
+                            <point x="0.5625" y="0.5625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.25" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Clothes02.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5625" y="0.4375" />
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Clothes03.png">
+                        <collision-poly>
+                            <point x="0.5625" y="0.4375" />
+                            <point x="0.5625" y="0.5625" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -315,45 +339,15 @@
                 <type>ActionBar</type>
             </container>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack000.png">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Pack.png">
                         <collision-poly>
-                            <point x="0.390625" y="0.609375" />
-                            <point x="0.34375" y="0.5" />
-                            <point x="0.390625" y="0.390625" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.25" y="0.5" />
-                            <point x="0.328125" y="0.328125" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack001.png">
-                        <collision-poly>
-                            <point x="0.390625" y="0.609375" />
-                            <point x="0.34375" y="0.5" />
-                            <point x="0.390625" y="0.390625" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.25" y="0.5" />
-                            <point x="0.328125" y="0.328125" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack002.png">
-                        <collision-poly>
-                            <point x="0.390625" y="0.609375" />
-                            <point x="0.34375" y="0.5" />
-                            <point x="0.390625" y="0.390625" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.25" y="0.5" />
-                            <point x="0.328125" y="0.328125" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Packs\pack003.png">
-                        <collision-poly>
-                            <point x="0.390625" y="0.609375" />
-                            <point x="0.34375" y="0.5" />
-                            <point x="0.390625" y="0.390625" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.25" y="0.5" />
-                            <point x="0.328125" y="0.328125" />
+                            <point x="0.609375" y="0.390625" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.609375" y="0.609375" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.671875" y="0.671875" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -378,15 +372,15 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153385415935086" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Hair\hair11.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Hair.png">
                         <collision-poly>
-                            <point x="0.6875" y="0.6875" />
-                            <point x="0.5" y="0.71875" />
-                            <point x="0.328125" y="0.671875" />
-                            <point x="0.328125" y="0.5" />
-                            <point x="0.34375" y="0.34375" />
-                            <point x="0.5" y="0.359375" />
-                            <point x="0.65625" y="0.34375" />
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.671875" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.34375" y="0.65625" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -855,6 +849,58 @@
         </object-type>
         <object-type name="Text" sid="3070267103046245">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Legs" sid="267248934728045">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="5140739940436121">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="2760318835203148" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Legs00.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Legs01.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.8125" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Legs02.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Characters\Players\Human\Layers\16Legs03.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
