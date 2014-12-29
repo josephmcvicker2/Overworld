@@ -867,9 +867,8 @@
                 <instance-variable name="Backwards" sid="1082855483010995" type="boolean" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6635723261339762" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6635723261339762" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\p14yd_000\Documents\Night00.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\p14yd_000\Documents\Night01.png" />
                 </animation>
             </animation-folder>
         </object-type>
