@@ -95,6 +95,7 @@
             <instance-variables>
                 <instance-variable name="InGame" sid="6252270943025356" type="boolean" />
                 <instance-variable name="ItemUsing" sid="1343763201713417" type="number" />
+                <instance-variable name="InWorkbench" sid="1053724626404868" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="5656133656389623">
@@ -394,12 +395,10 @@
                 <instance-variable name="IsFull" sid="8563003826801384" type="boolean" />
                 <instance-variable name="IsSelected" sid="1362142720948519" type="boolean" />
                 <instance-variable name="Pending" sid="8666334020620938" type="boolean" />
+                <instance-variable name="WorkbenchSlotNumber" sid="6628786888967376" type="number" />
+                <instance-variable comment="For Workbench Crafting" name="ItemIDInside" sid="687449899842814" type="number" />
+                <instance-variable name="ItemUIDInside" sid="9086188824649308" type="number" />
             </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="8587871430567717">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7203356879798163" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
@@ -449,6 +448,8 @@
                 <instance-variable name="PointsGrind" sid="2734224885636874" type="number" />
                 <instance-variable name="CraftingFormula" sid="6462203887256451" type="number" />
                 <instance-variable name="Durability" sid="3382381356164768" type="number" />
+                <instance-variable name="IsOnWorkbench" sid="3635253039827954" type="boolean" />
+                <instance-variable name="FreshCraft" sid="1857789436622878" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -924,6 +925,28 @@
                             <point x="0.9375" y="0.875" />
                             <point x="0.5" y="0.9375" />
                             <point x="0.15625" y="0.6875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WorkbenchUI" sid="2246192635315301">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="CraftingFormula" sid="2487174679923456" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2385832815527644" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="C:\Users\Sam\Documents\WorkBenchUI.png">
+                        <collision-poly>
+                            <point x="0.0104167" y="0.0243902" />
+                            <point x="0.5" y="0" />
+                            <point x="0.989583" y="0.0243902" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.96875" y="0.926829" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.926829" />
+                            <point x="0" y="0.487805" />
                         </collision-poly>
                     </frame>
                 </animation>

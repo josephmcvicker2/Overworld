@@ -105,6 +105,7 @@
                     <instance-variables>
                         <InGame>true</InGame>
                         <ItemUsing>0</ItemUsing>
+                        <InWorkbench>false</InWorkbench>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -162,6 +163,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -217,6 +220,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -272,6 +277,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -327,6 +334,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -382,6 +391,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -762,6 +773,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -817,6 +830,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -872,6 +887,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -927,6 +944,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -982,6 +1001,8 @@
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
                         <Durability>0</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1545,10 +1566,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1576,10 +1597,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1607,10 +1628,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1638,10 +1659,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>false</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1697,10 +1718,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1728,10 +1749,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1759,10 +1780,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1790,10 +1811,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1821,10 +1842,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1852,10 +1873,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1883,10 +1904,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1914,10 +1935,10 @@
                         <IsFull>false</IsFull>
                         <IsSelected>true</IsSelected>
                         <Pending>false</Pending>
+                        <WorkbenchSlotNumber>0</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1970,6 +1991,186 @@
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WorkbenchUI" uid="56">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <CraftingFormula>0</CraftingFormula>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>100</x>
+                        <y>30</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.515625</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot" uid="57">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SlotNumber>0</SlotNumber>
+                        <IsFull>false</IsFull>
+                        <IsSelected>false</IsSelected>
+                        <Pending>false</Pending>
+                        <WorkbenchSlotNumber>1</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>85</x>
+                        <y>28</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot" uid="58">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SlotNumber>0</SlotNumber>
+                        <IsFull>false</IsFull>
+                        <IsSelected>false</IsSelected>
+                        <Pending>false</Pending>
+                        <WorkbenchSlotNumber>2</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>95</x>
+                        <y>28</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot" uid="59">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SlotNumber>0</SlotNumber>
+                        <IsFull>false</IsFull>
+                        <IsSelected>false</IsSelected>
+                        <Pending>false</Pending>
+                        <WorkbenchSlotNumber>3</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>105</x>
+                        <y>28</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot" uid="60">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SlotNumber>0</SlotNumber>
+                        <IsFull>false</IsFull>
+                        <IsSelected>false</IsSelected>
+                        <Pending>false</Pending>
+                        <WorkbenchSlotNumber>4</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>115</x>
+                        <y>28</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Slot" uid="61">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SlotNumber>0</SlotNumber>
+                        <IsFull>false</IsFull>
+                        <IsSelected>false</IsSelected>
+                        <Pending>false</Pending>
+                        <WorkbenchSlotNumber>5</WorkbenchSlotNumber>
+                        <ItemIDInside>0</ItemIDInside>
+                        <ItemUIDInside>0</ItemUIDInside>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>100</x>
+                        <y>39.5</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
