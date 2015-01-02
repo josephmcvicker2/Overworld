@@ -312,12 +312,15 @@
                                 <action id="25" name="Play at object" sid="2726186258428672" type="Red">
                                     <param id="0" name="Audio file">Red</param>
                                     <param id="1" name="Loop">1</param>
-                                    <param id="2" name="Volume">-30</param>
+                                    <param id="2" name="Volume">-8</param>
                                     <param id="3" name="Object">Player</param>
                                     <param id="4" name="Inner angle">360</param>
                                     <param id="5" name="Outer angle">360</param>
                                     <param id="6" name="Outer gain">0</param>
                                     <param id="7" name="Tag (optional)">&quot;Player Music&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="636719722205822" type="Border">
+                                    <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -632,7 +635,7 @@
                             <actions>
                                 <action id="-11" name="Add to" sid="9700757930580206" type="Light">
                                     <param id="0" name="Instance variable">Timer</param>
-                                    <param id="1" name="Value">0.25</param>
+                                    <param id="1" name="Value">0.05</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -692,7 +695,7 @@
                             <actions>
                                 <action id="-12" name="Subtract from" sid="2304231563250194" type="Light">
                                     <param id="0" name="Instance variable">Timer</param>
-                                    <param id="1" name="Value">0.25</param>
+                                    <param id="1" name="Value">0.05</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2974,6 +2977,10 @@
                                                 <action id="-13" name="Set boolean" sid="1345939013397005" type="Item">
                                                     <param id="0" name="Instance variable">IsCrafting</param>
                                                     <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="3942140234916027" type="Function">
+                                                    <param id="0" name="Name">&quot;NextSlot&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
                                                 </action>
                                             </actions>
                                             <sub-events>
