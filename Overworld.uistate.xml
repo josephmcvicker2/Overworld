@@ -24,6 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="Crafters" />
         <family expanded="1" name="Selectable" />
         <family expanded="0" name="NotBuildableOn" />
+        <family expanded="1" name="Damagables" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
@@ -59,5 +60,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/WorkbenchUI/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/NPC/" />
+        <folder expanded="1" path="animation-folder/DetailsBG/" />
+        <folder expanded="1" path="animation-folder/CraftDetailsBG/" />
+        <folder expanded="1" path="animation-folder/ItemOnBattlefield/" />
+        <folder expanded="1" path="animation-folder/HPBar/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/NPCHPBar/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/CharacterUI/" />
     </folders-expanded>
 </c2uistate>

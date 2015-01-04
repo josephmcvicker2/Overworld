@@ -34,6 +34,21 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>5</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>2</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -146,7 +161,10 @@
                         <ItemUsing>0</ItemUsing>
                         <InWorkbench>false</InWorkbench>
                         <ItemIsOnBattlefield>false</ItemIsOnBattlefield>
-                        <Health>100</Health>
+                        <HP>100</HP>
+                        <Weight>15</Weight>
+                        <MovementSpeed>0</MovementSpeed>
+                        <HPDisplay>0</HPDisplay>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -203,11 +221,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -220,13 +249,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -262,11 +297,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -279,13 +325,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -321,11 +373,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -338,13 +401,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -380,11 +449,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -397,13 +477,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -439,11 +525,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -456,13 +553,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -823,11 +926,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -840,13 +954,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -882,11 +1002,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -899,13 +1030,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -941,11 +1078,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -958,13 +1106,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -1000,11 +1154,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1017,13 +1182,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -1059,11 +1230,22 @@
                         <IsCrafting>false</IsCrafting>
                         <PointsGrind>0</PointsGrind>
                         <CraftingFormula>0</CraftingFormula>
-                        <Durability>0</Durability>
+                        <Durability>100</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
-                        <DMG>0</DMG>
                         <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1076,13 +1258,19 @@
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>10</magnitude>
+                                <magnitude>20</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
                                 <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -1162,11 +1350,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <HP>100</HP>
+                        <HPDisplay>1</HPDisplay>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>454.210327148</x>
-                        <y>81.754112244</y>
+                        <x>452</x>
+                        <y>84</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -1177,25 +1369,192 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ItemOnBattlefield" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Live>false</Live>
+                        <IsOffCooldown>true</IsOffCooldown>
+                        <SPD>0</SPD>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <Tool>0</Tool>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>198.436538696</x>
+                        <y>107.904190063</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPCHPBar" uid="68">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <NPCOwner>64</NPCOwner>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>452</x>
+                        <y>94</y>
+                        <z>0</z>
+                        <width>13</width>
+                        <height>1</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Item" uid="69">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ItemID>6</ItemID>
+                        <Type>5</Type>
+                        <IsInInventory>false</IsInInventory>
+                        <InventorySlotNumber>0</InventorySlotNumber>
+                        <PointsAnvil>0</PointsAnvil>
+                        <PointsForge>0</PointsForge>
+                        <IsCrafting>false</IsCrafting>
+                        <PointsGrind>0</PointsGrind>
+                        <CraftingFormula>0</CraftingFormula>
+                        <Durability>100</Durability>
+                        <IsOnWorkbench>false</IsOnWorkbench>
+                        <FreshCraft>false</FreshCraft>
+                        <IsOnBattlefield>false</IsOnBattlefield>
+                        <DMG>0</DMG>
+                        <CD>0</CD>
+                        <SPD>0</SPD>
+                        <BaseDMG>0</BaseDMG>
+                        <BaseSPD>0</BaseSPD>
+                        <BaseCD>0</BaseCD>
+                        <BonusDMG>0</BonusDMG>
+                        <BonusSPD>0</BonusSPD>
+                        <BonusCD>0</BonusCD>
+                        <ToolAxe>0</ToolAxe>
+                        <BaseToolAxe>0</BaseToolAxe>
+                        <BonusToolAxe>0</BonusToolAxe>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>20</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>210</x>
+                        <y>142</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPC" uid="70">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <HP>100</HP>
+                        <HPDisplay>1</HPDisplay>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>498</x>
+                        <y>80</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPCHPBar" uid="71">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <NPCOwner>70</NPCOwner>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>498</x>
+                        <y>90</y>
+                        <z>0</z>
+                        <width>13</width>
+                        <height>1</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
-            <effects />
-        </layer>
-        <layer name="TopGame" sid="2802987163156892">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances />
             <effects />
         </layer>
         <layer name="Hands" sid="2864706392774279">
@@ -1522,6 +1881,7 @@
                     <instance-variables>
                         <InstanceNumber>0</InstanceNumber>
                         <DropRate>0</DropRate>
+                        <HP>100</HP>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="ShadowCaster">
@@ -1596,6 +1956,50 @@
             </instances>
             <effects />
         </layer>
+        <layer name="TopGame" sid="2802987163156892">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="CraftDetailsBG" uid="65">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-53.983692169</x>
+                        <y>22.200012207</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
         <layer name="UI" sid="9529207684314753">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -1633,6 +2037,218 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="InventoryUI" uid="25">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <HasBbeenPressed>false</HasBbeenPressed>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>176</x>
+                        <y>56</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Cursor" uid="35">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416.807891846</x>
+                        <y>215.88293457</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CursorSelectable" uid="36">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416.807098389</x>
+                        <y>215.88331604</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WorkbenchUI" uid="56">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <CraftingFormula>0</CraftingFormula>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>100</x>
+                        <y>30</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.515625</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="HPBar" uid="67">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>100</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>52</width>
+                        <height>4</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CharacterUI" uid="72">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>24</x>
+                        <y>84.5</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>55</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="UI Text" sid="4661479335645057">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0</x>
+                <y>0</y>
+            </parallax>
+            <zoom-rate>0.001</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="DetailsBG" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-63.719795227</x>
+                        <y>94.223548889</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.699999988</opacity>
+                    </world>
+                </instance>
+                <instance type="Details" uid="40">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-4,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Bottom</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-64.617088318</x>
+                        <y>109.217979431</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1754,34 +2370,6 @@
                         <z>0</z>
                         <width>8</width>
                         <height>8</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="InventoryUI" uid="25">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <HasBbeenPressed>false</HasBbeenPressed>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>176</x>
-                        <y>56</y>
-                        <z>0</z>
-                        <width>48</width>
-                        <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2037,75 +2625,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cursor" uid="35">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>416.807891846</x>
-                        <y>215.88293457</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="CursorSelectable" uid="36">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>416.807098389</x>
-                        <y>215.88331604</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="WorkbenchUI" uid="56">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <CraftingFormula>0</CraftingFormula>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>100</x>
-                        <y>30</y>
-                        <z>0</z>
-                        <width>48</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.515625</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Slot" uid="57">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -2264,55 +2783,6 @@
             </instances>
             <effects />
         </layer>
-        <layer name="UI Text" sid="4661479335645057">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>0</x>
-                <y>0</y>
-            </parallax>
-            <zoom-rate>0.001</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="Details" uid="40">
-                    <properties>
-                        <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-7,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Bottom</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <instance-variables>
-                        <OverlapShow>false</OverlapShow>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-65.025390625</x>
-                        <y>107.577430725</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects />
-        </layer>
         <layer name="Game Text" sid="2412099938943542">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -2333,7 +2803,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Segoe Print,-7,400,0</font>
+                        <font>Segoe Print,-4,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -2348,8 +2818,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-56.422241211</x>
-                        <y>46.982254028</y>
+                        <x>-54.549434662</x>
+                        <y>37.552627563</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
@@ -2378,30 +2848,7 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="Sprite" uid="63">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>100</x>
-                        <y>56</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>112</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
+            <instances />
             <effects />
         </layer>
     </layers>

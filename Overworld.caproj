@@ -23,6 +23,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
@@ -45,7 +46,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D web</prop>
@@ -74,6 +75,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1237773606686911" speed="5">
@@ -98,7 +106,10 @@
                 <instance-variable name="ItemUsing" sid="1343763201713417" type="number" />
                 <instance-variable name="InWorkbench" sid="1053724626404868" type="boolean" />
                 <instance-variable name="ItemIsOnBattlefield" sid="4359756642611298" type="boolean" />
-                <instance-variable name="Health" sid="2458219725875477" type="number" />
+                <instance-variable name="HP" sid="2458219725875477" type="number" />
+                <instance-variable name="Weight" sid="2247849822682553" type="number" />
+                <instance-variable name="MovementSpeed" sid="6748773826647172" type="number" />
+                <instance-variable name="HPDisplay" sid="3498619713250845" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="5656133656389623">
@@ -120,6 +131,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5607002000840864" speed="5">
@@ -140,6 +158,7 @@
             <instance-variables>
                 <instance-variable name="InstanceNumber" sid="41497075727605" type="number" />
                 <instance-variable name="DropRate" sid="1654893568259048" type="number" />
+                <instance-variable name="HP" sid="9738746788787993" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="6609258291167218">
@@ -202,6 +221,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4597027840813541" speed="5">
@@ -234,6 +260,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7562725048641405" speed="8">
@@ -281,6 +314,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353833129190044" speed="8">
@@ -342,6 +382,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8222852537929039" speed="10">
@@ -374,6 +421,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153385415935086" speed="10">
@@ -415,6 +469,22 @@
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Selected.png" />
                 </animation>
+                <animation framecount="14" loop="0" name="CD" pingpong="0" repeatcount="1" repeatto="0" sid="9401497440878276" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown00.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cooldown.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type global="1" name="Inventory" sid="7591099813780453">
@@ -433,6 +503,13 @@
                 <type>Hands</type>
                 <type>Pack</type>
                 <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
             </container>
         </object-type>
         <object-type name="Function" sid="2491592186687046">
@@ -453,8 +530,19 @@
                 <instance-variable name="Durability" sid="3382381356164768" type="number" />
                 <instance-variable name="IsOnWorkbench" sid="3635253039827954" type="boolean" />
                 <instance-variable name="FreshCraft" sid="1857789436622878" type="boolean" />
-                <instance-variable name="DMG" sid="220999606268081" type="number" />
                 <instance-variable name="IsOnBattlefield" sid="885111502985449" type="boolean" />
+                <instance-variable name="DMG" sid="220999606268081" type="number" />
+                <instance-variable name="CD" sid="1728467546362125" type="number" />
+                <instance-variable name="SPD" sid="4696538133406401" type="number" />
+                <instance-variable name="BaseDMG" sid="1754883446467148" type="number" />
+                <instance-variable name="BaseSPD" sid="6132349439569683" type="number" />
+                <instance-variable name="BaseCD" sid="1704770151361543" type="number" />
+                <instance-variable name="BonusDMG" sid="3254938376196147" type="number" />
+                <instance-variable name="BonusSPD" sid="1239641190849355" type="number" />
+                <instance-variable name="BonusCD" sid="5567585804384516" type="number" />
+                <instance-variable name="ToolAxe" sid="6248326584682197" type="number" />
+                <instance-variable name="BaseToolAxe" sid="1979194721203652" type="number" />
+                <instance-variable name="BonusToolAxe" sid="3495144389467018" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -466,9 +554,12 @@
                 <behavior-type name="Solid" sid="2992870773844726">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Rotate" sid="6391654731536337">
+                    <behavior id="Rotate" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9787973900636913" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Empty.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
                         <collision-poly>
@@ -526,6 +617,17 @@
                             <point x="0.25" y="0.5" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Items\SwordBasic.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -539,6 +641,23 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3619475826942988" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Inventory8.png">
@@ -557,15 +676,12 @@
         </object-type>
         <object-type name="Details" sid="3240858253211652">
             <plugin id="Text" />
-            <instance-variables>
-                <instance-variable name="OverlapShow" sid="4805572380090186" type="boolean" />
-            </instance-variables>
         </object-type>
         <object-type name="Cursor" sid="4929715900376">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1234187461699426" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\Cursor.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Cursor.png">
                         <collision-poly>
                             <point x="0.1875" y="0.1875" />
                             <point x="0.5" y="0.0625" />
@@ -584,7 +700,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4971039812342033" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\UI\In game\CursorSelectable.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\CursorSelectable.png">
                         <collision-poly>
                             <point x="0.1875" y="0.1875" />
                             <point x="0.5" y="0.0625" />
@@ -627,7 +743,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="8" loop="1" name="Lit" pingpong="0" repeatcount="1" repeatto="0" sid="7034247522303732" speed="10">
+                <animation framecount="8" loop="1" name="Lit" pingpong="0" repeatcount="1" repeatto="0" sid="7034247522303732" speed="14">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Map\Tiles\Indeviduals\Forge\Forge00.png">
                         <collision-poly>
                             <point x="0.1875" y="0.1875" />
@@ -739,6 +855,23 @@
                 <instance-variable name="OverlapShow" sid="8592587365236677" type="boolean" />
                 <instance-variable name="Mode" sid="8169929783229441" type="number" />
             </instance-variables>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
         </object-type>
         <object-type name="CrafterOil" sid="3043605257353807">
             <plugin id="Sprite" />
@@ -855,9 +988,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="3070267103046245">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Legs" sid="267248934728045">
             <plugin id="Sprite" />
             <behaviors>
@@ -941,6 +1071,23 @@
             <instance-variables>
                 <instance-variable name="CraftingFormula" sid="2487174679923456" type="number" />
             </instance-variables>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2385832815527644" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="C:\Users\Sam\Documents\WorkBenchUI.png">
@@ -960,6 +1107,11 @@
         </object-type>
         <object-type name="TiledBackground" sid="354973589659993">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="4518872307076159">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="E:\Overworld\Map\Tiles\Effects\Water\Water0.png" />
         </object-type>
         <object-type name="Sprite" sid="8587092615797759">
@@ -972,6 +1124,14 @@
         </object-type>
         <object-type name="NPC" sid="2044238460545489">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HP" sid="559673754248587" type="number" />
+                <instance-variable name="HPDisplay" sid="8901247281190961" type="number" />
+            </instance-variables>
+            <container>
+                <type>NPC</type>
+                <type>NPCHPBar</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7577856051811149" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\NPC01.png">
@@ -983,6 +1143,449 @@
                             <point x="0.0625" y="0.5" />
                             <point x="0.1875" y="0.1875" />
                             <point x="0.5" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DetailsBG" sid="490204679678676">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="8130532453942107">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4108913533531565" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\TextBG.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.4" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8" y="0.4" />
+                            <point x="0.825" y="0.5" />
+                            <point x="0.825" y="0.65" />
+                            <point x="0.5" y="1" />
+                            <point x="0.175" y="0.65" />
+                            <point x="0.175" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CraftDetailsBG" sid="5919501569133745">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4842756285454814">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1283800675130641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\TextBG.png">
+                        <collision-poly>
+                            <point x="0.046875" y="0.1875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.953125" y="0.1875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.8125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.046875" y="0.8125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemOnBattlefield" sid="6171670554326809">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Live" sid="1556895488866568" type="boolean" />
+                <instance-variable name="IsOffCooldown" sid="9288242205409056" type="boolean" />
+                <instance-variable name="SPD" sid="787691242761843" type="number" />
+                <instance-variable name="DMG" sid="9278350417165025" type="number" />
+                <instance-variable name="CD" sid="6444170775124957" type="number" />
+                <instance-variable name="Tool" sid="8418595847491712" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="4190863259278872">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8058712572017444" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="0" name="A5" pingpong="0" repeatcount="0" repeatto="0" sid="572561938120651" speed="0">
+                    <frame duration="1" hotspotX="0.0625" hotspotY="0.8125" original-source="D:\Overworld\Items\AxeIron.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.0625" hotspotY="0.8125" original-source="D:\Overworld\Items\AxeIronLive.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="A6" pingpong="0" repeatcount="1" repeatto="0" sid="7667132191101013" speed="5">
+                    <frame duration="1" hotspotX="0.0625" hotspotY="0.875" original-source="D:\Overworld\Items\SwordBasic.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.0625" hotspotY="0.875" original-source="D:\Overworld\Items\SwordBasicLive.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HPBar" sid="9719093957642842">
+            <plugin id="Sprite" />
+            <container>
+                <type>Player</type>
+                <type>Inventory</type>
+                <type>Hair</type>
+                <type>Border</type>
+                <type>Clothes</type>
+                <type>Hands</type>
+                <type>Pack</type>
+                <type>ActionBar</type>
+                <type>HPBar</type>
+                <type>InventoryUI</type>
+                <type>DetailsBG</type>
+                <type>CraftDetailsBG</type>
+                <type>CraftDetails</type>
+                <type>ItemOnBattlefield</type>
+                <type>WorkbenchUI</type>
+            </container>
+            <animation-folder>
+                <animation framecount="101" loop="0" name="HP" pingpong="0" repeatcount="0" repeatto="0" sid="2076215732110428" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP15.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP17.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP18.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP19.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP20.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP21.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP24.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP25.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP26.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP27.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP28.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP29.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP30.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP31.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP32.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP33.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP34.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP35.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP36.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP37.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP38.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP39.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP40.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP41.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP42.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP44.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP45.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP47.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP48.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP49.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP50.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP51.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP52.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP53.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP54.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP55.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP56.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP57.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP58.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP59.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP60.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP61.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP62.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP63.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP64.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP65.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP66.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP67.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP68.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP69.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP70.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP71.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP72.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP73.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP74.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP75.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP76.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP77.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP78.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP79.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP80.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP81.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP82.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP83.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP84.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP85.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP86.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP87.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP88.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP89.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP90.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP91.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP92.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP93.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP94.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP95.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP96.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP97.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP98.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP99.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP100.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="8027295743282764">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7021570418339874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NPCHPBar" sid="1688790367987005">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="NPCOwner" sid="2025490294300132" type="number" />
+            </instance-variables>
+            <container>
+                <type>NPC</type>
+                <type>NPCHPBar</type>
+            </container>
+            <animation-folder>
+                <animation framecount="101" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="1005009042638527" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP15.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP17.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP18.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP19.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP20.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP21.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP24.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP25.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP26.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP27.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP28.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP29.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP30.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP31.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP32.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP33.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP34.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP35.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP36.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP37.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP38.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP39.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP40.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP41.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP42.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP43.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP44.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP45.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP47.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP48.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP49.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP50.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP51.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP52.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP53.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP54.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP55.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP56.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP57.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP58.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP59.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP60.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP61.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP62.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP63.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP64.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP65.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP66.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP67.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP68.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP69.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP70.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP71.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP72.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP73.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP74.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP75.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP76.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP77.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP78.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP79.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP80.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP81.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP82.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP83.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP84.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP85.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP86.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP87.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP88.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP89.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP90.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP91.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP92.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP93.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP94.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP95.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP96.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP97.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP98.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP99.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\HP\HP100.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="251256966205589">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="84551046636922" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CharacterUI" sid="5279125493043945">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9498814739674519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\Character.png">
+                        <collision-poly>
+                            <point x="0.0104167" y="0.00909091" />
+                            <point x="0.989583" y="0.00909091" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0520833" y="0.954545" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1029,6 +1632,11 @@
                 <member>Item</member>
                 <member>Player</member>
                 <member>TreeTrunk</member>
+            </members>
+        </family>
+        <family name="Damagables" plugin-id="Sprite" sid="2375702238502343">
+            <members>
+                <member>NPC</member>
             </members>
         </family>
     </families>
