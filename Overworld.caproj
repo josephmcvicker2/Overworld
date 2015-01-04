@@ -456,6 +456,11 @@
                 <instance-variable comment="For Workbench Crafting" name="ItemIDInside" sid="687449899842814" type="number" />
                 <instance-variable name="ItemUIDInside" sid="9086188824649308" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="3790801184990049">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7203356879798163" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Overworld\Items\Wood.png">
@@ -1590,6 +1595,22 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="StatsBG" sid="2014551658012516">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4510552281957531">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8370394865548006" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\In game\StatsBG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stats" sid="1307445590815356">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

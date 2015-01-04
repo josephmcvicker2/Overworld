@@ -1985,8 +1985,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-53.983692169</x>
-                        <y>22.200012207</y>
+                        <x>-32</x>
+                        <y>22</y>
                         <z>0</z>
                         <width>32</width>
                         <height>8</height>
@@ -2241,10 +2241,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-64.617088318</x>
+                        <x>-64.617103577</x>
                         <y>109.217979431</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>36</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2269,6 +2269,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2300,6 +2303,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2331,6 +2337,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2362,6 +2371,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2393,6 +2405,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2424,6 +2439,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2455,6 +2473,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2486,6 +2507,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2517,6 +2541,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2548,6 +2575,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2579,6 +2609,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2610,6 +2643,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2641,6 +2677,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2672,6 +2711,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2703,6 +2745,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2734,6 +2779,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2765,6 +2813,9 @@
                         <ItemIDInside>0</ItemIDInside>
                         <ItemUIDInside>0</ItemUIDInside>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2776,6 +2827,58 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="StatsBG" uid="73">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-64</x>
+                        <y>-46</y>
+                        <z>0</z>
+                        <width>16.5</width>
+                        <height>23.5</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.699999988</opacity>
+                    </world>
+                </instance>
+                <instance type="Stats" uid="74">
+                    <properties>
+                        <text>hi there</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Segoe Print,-1,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-71.469978333</x>
+                        <y>-56.485904694</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>21.5</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -2818,10 +2921,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-54.549434662</x>
-                        <y>37.552627563</y>
+                        <x>-32.354709625</x>
+                        <y>36.638462067</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>36</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

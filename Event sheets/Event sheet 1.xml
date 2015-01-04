@@ -142,6 +142,20 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="5017648113861954">
+                                    <conditions>
+                                        <condition id="-34" name="Pick by evaluate" sid="4475160175785201" type="System">
+                                            <param id="0" name="Object">Slot</param>
+                                            <param id="1" name="Expression">Slot.SlotNumber &gt; 5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="7020991096819279" type="Slot">
+                                            <param id="0" name="Pin to">InventoryUI</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                         <event-block sid="8196377468442381">
@@ -191,6 +205,16 @@
                                     <param id="0" name="Text">Item.PointsForge&amp;&quot; | &quot;&amp;Item.PointsAnvil&amp;&quot; | &quot;&amp;Item.PointsGrind</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="1898202196725457" type="Details">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6141564792774126" type="Stats">
+                                    <param id="0" name="X">Item.X - 32</param>
+                                    <param id="1" name="Y">Item.Y - 16</param>
+                                </action>
+                                <action id="0" name="Set text" sid="859973267267904" type="Stats">
+                                    <param id="0" name="Text">&quot;Bonus DMG: &quot;&amp;Item.BonusDMG&amp;&quot; &quot;&amp;newline&amp; &quot;Bonus SPD: &quot;&amp;Item.BonusSPD&amp;&quot; &quot;&amp;newline&amp;&quot;Bonus CD: &quot;&amp;Item.BonusCD</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9481607107531947" type="Stats">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
@@ -420,6 +444,10 @@
                                 </action>
                                 <action behavior="Pin" id="0" name="Pin to object" sid="3404197803927783" type="CraftDetailsBG">
                                     <param id="0" name="Pin to">CraftDetails</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="2496742303035727" type="StatsBG">
+                                    <param id="0" name="Pin to">Stats</param>
                                     <param id="1" name="Mode">0</param>
                                 </action>
                                 <action id="-42" name="Signal" sid="4438991467913441" type="System">
@@ -2267,13 +2295,23 @@
                                     <conditions>
                                         <condition id="-9" name="Is visible" sid="3866737328772112" type="InventoryUI" />
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="3106145979177862" type="InventoryUI">
+                                            <param id="0" name="X">176</param>
+                                            <param id="1" name="Y">56</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                                 <event-block sid="7594927075171068">
                                     <conditions>
                                         <condition id="-9" inverted="1" name="Is visible" sid="4335909641921051" type="InventoryUI" />
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="7680168654431544" type="InventoryUI">
+                                            <param id="0" name="X">256</param>
+                                            <param id="1" name="Y">56</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-group>
