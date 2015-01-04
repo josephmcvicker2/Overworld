@@ -145,6 +145,8 @@
                         <InGame>true</InGame>
                         <ItemUsing>0</ItemUsing>
                         <InWorkbench>false</InWorkbench>
+                        <ItemIsOnBattlefield>false</ItemIsOnBattlefield>
+                        <Health>100</Health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -204,6 +206,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -261,6 +265,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -318,6 +324,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -375,6 +383,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -432,6 +442,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -814,6 +826,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -871,6 +885,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -928,6 +944,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -985,6 +1003,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1042,6 +1062,8 @@
                         <Durability>0</Durability>
                         <IsOnWorkbench>false</IsOnWorkbench>
                         <FreshCraft>false</FreshCraft>
+                        <DMG>0</DMG>
+                        <IsOnBattlefield>false</IsOnBattlefield>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -1125,6 +1147,28 @@
                         <y>32</y>
                         <z>0</z>
                         <width>32</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPC" uid="64">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>454.210327148</x>
+                        <y>81.754112244</y>
+                        <z>0</z>
+                        <width>16</width>
                         <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2241,7 +2285,7 @@
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Segoe Print,-7,400,0</font>
-                        <color>227,227,227</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Bottom</hotspot>
@@ -2290,7 +2334,7 @@
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Segoe Print,-7,400,0</font>
-                        <color>227,227,227</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Bottom</hotspot>
@@ -2312,6 +2356,47 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Loading Screen" sid="2078219842473018">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0</x>
+                <y>0</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Sprite" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>100</x>
+                        <y>56</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>112</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

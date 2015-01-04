@@ -77,7 +77,7 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1237773606686911" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Boarder\Freindly.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\Human\Layers\Boarder\Boarder.png">
                         <collision-poly>
                             <point x="0.265625" y="0.265625" />
                             <point x="0.734375" y="0.265625" />
@@ -97,6 +97,8 @@
                 <instance-variable name="InGame" sid="6252270943025356" type="boolean" />
                 <instance-variable name="ItemUsing" sid="1343763201713417" type="number" />
                 <instance-variable name="InWorkbench" sid="1053724626404868" type="boolean" />
+                <instance-variable name="ItemIsOnBattlefield" sid="4359756642611298" type="boolean" />
+                <instance-variable name="Health" sid="2458219725875477" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="5656133656389623">
@@ -451,6 +453,8 @@
                 <instance-variable name="Durability" sid="3382381356164768" type="number" />
                 <instance-variable name="IsOnWorkbench" sid="3635253039827954" type="boolean" />
                 <instance-variable name="FreshCraft" sid="1857789436622878" type="boolean" />
+                <instance-variable name="DMG" sid="220999606268081" type="number" />
+                <instance-variable name="IsOnBattlefield" sid="885111502985449" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="4016651039870962">
@@ -957,6 +961,32 @@
         <object-type name="TiledBackground" sid="354973589659993">
             <plugin id="TiledBg" />
             <texture original-source="E:\Overworld\Map\Tiles\Effects\Water\Water0.png" />
+        </object-type>
+        <object-type name="Sprite" sid="8587092615797759">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3239652742438385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\UI\Out of game\Loading Screen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NPC" sid="2044238460545489">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7577856051811149" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Overworld\Characters\Players\NPC01.png">
+                        <collision-poly>
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.0625" y="0.5" />
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
